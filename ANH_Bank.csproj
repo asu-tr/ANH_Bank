@@ -61,7 +61,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormSignIn.en.resx">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSignIn.resx">
+      <DependentUpon>FormSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignIn.tr.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStart.en.resx">

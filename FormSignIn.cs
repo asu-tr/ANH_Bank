@@ -23,7 +23,7 @@ namespace ANH_Bank
             {
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             }
-            InitializeComponent();
+            RefreshForm();
         }
 
         private void RefreshForm()

@@ -22,9 +22,11 @@
         private void MyInitializeComponent()
         {
             this.labelID.Font = ANHColorsFonts.FontANH_header2;
+            this.textBoxID.Font = ANHColorsFonts.FontANH_default;
             this.labelPwd.Font = ANHColorsFonts.FontANH_header2;
-            this.button.Font = ANHColorsFonts.FontANH_header2;
-            this.buttonLanguage.Font = ANHColorsFonts.FontANH_default;
+            this.textBoxPwd.Font = ANHColorsFonts.FontANH_default;
+            this.buttonSignIn.Font = ANHColorsFonts.FontANH_header1;
+            this.labelForgotPwd.Font = ANHColorsFonts.FontANH_default;
         }
 
         #region Windows Form Designer generated code
