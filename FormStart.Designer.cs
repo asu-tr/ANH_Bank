@@ -60,6 +60,7 @@
             resources.ApplyResources(this.buttonSignUp, "buttonSignUp");
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.UseVisualStyleBackColor = true;
+            this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);
             // 
             // buttonLanguage
             // 
