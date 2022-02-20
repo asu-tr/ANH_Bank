@@ -13,7 +13,7 @@ namespace ANH_Bank
             RefreshForm();
         }
 
-        #region Buttons
+        #region Events
 
         private void buttonLanguage_Click(object sender, EventArgs e)
         {
@@ -43,6 +43,13 @@ namespace ANH_Bank
             this.Hide();
         }
 
+        private void buttonSignUp_Click(object sender, EventArgs e)
+        {
+            FormSignUp formSignUp = new FormSignUp(GetCurrentLanguage());
+            formSignUp.Show();
+            this.Hide();
+        }
+
         #endregion
 
 
@@ -61,5 +68,7 @@ namespace ANH_Bank
         }
 
         #endregion
+
+        
     }
 }
