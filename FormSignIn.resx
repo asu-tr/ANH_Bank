@@ -131,6 +131,9 @@
   <data name="&gt;&gt;labelForgotPwd.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;textBoxID.Name" xml:space="preserve">
+    <value>textBoxID</value>
+  </data>
   <data name="labelID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -188,9 +191,6 @@
   <data name="&gt;&gt;buttonSignIn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxID.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="labelPwd.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 164</value>
   </data>
@@ -239,8 +239,8 @@
   <data name="&gt;&gt;labelForgotPwd.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBoxPwd.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;textBoxID.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="labelPwd.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 16</value>
@@ -267,8 +267,8 @@
   <data name="textBoxID.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBoxID.Name" xml:space="preserve">
-    <value>textBoxID</value>
+  <data name="&gt;&gt;textBoxPwd.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;labelID.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -298,6 +298,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>tr</value>
+    <value>en</value>
   </metadata>
 </root>
