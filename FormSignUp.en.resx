@@ -229,4 +229,7 @@
   <data name="labelSecA.Text" xml:space="preserve">
     <value>Answer:</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
 </root>
