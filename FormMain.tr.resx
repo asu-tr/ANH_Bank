@@ -117,24 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="buttonExchange.Text" xml:space="preserve">
-    <value>Döviz</value>
-  </data>
-  <data name="buttonPayments.Text" xml:space="preserve">
-    <value>Ödemeler</value>
-  </data>
-  <data name="buttonTransfers.Text" xml:space="preserve">
-    <value>Transferler</value>
-  </data>
-  <data name="buttonCards.Text" xml:space="preserve">
-    <value>Kartlar</value>
-  </data>
-  <data name="buttonAccounts.Text" xml:space="preserve">
-    <value>Hesaplar</value>
-  </data>
-  <data name="buttonMain.Text" xml:space="preserve">
-    <value>Ana Sayfa</value>
-  </data>
   <data name="buttonRates.Text" xml:space="preserve">
     <value>Kurlar</value>
   </data>
@@ -143,6 +125,9 @@
   </data>
   <data name="buttonBuy.Text" xml:space="preserve">
     <value>Alış</value>
+  </data>
+  <data name="buttonExchange.Text" xml:space="preserve">
+    <value>Döviz</value>
   </data>
   <data name="buttonTax.Text" xml:space="preserve">
     <value>Vergi</value>
@@ -153,10 +138,28 @@
   <data name="buttonBills.Text" xml:space="preserve">
     <value>Fatura</value>
   </data>
+  <data name="buttonPayments.Text" xml:space="preserve">
+    <value>Ödemeler</value>
+  </data>
+  <data name="buttonTransfers.Text" xml:space="preserve">
+    <value>Transferler</value>
+  </data>
   <data name="buttonCreditCard.Text" xml:space="preserve">
     <value>Kredi Kartı</value>
   </data>
   <data name="buttonDebitCard.Text" xml:space="preserve">
     <value>Banka Kartı</value>
+  </data>
+  <data name="buttonCards.Text" xml:space="preserve">
+    <value>Kartlar</value>
+  </data>
+  <data name="buttonAccounts.Text" xml:space="preserve">
+    <value>Hesaplar</value>
+  </data>
+  <data name="buttonMain.Text" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ANH BANK</value>
   </data>
 </root>

@@ -82,11 +82,11 @@
             // 
             // panelExchangeSubMenu
             // 
+            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelExchangeSubMenu.Controls.Add(this.buttonRates);
             this.panelExchangeSubMenu.Controls.Add(this.buttonSell);
             this.panelExchangeSubMenu.Controls.Add(this.buttonBuy);
-            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.Name = "panelExchangeSubMenu";
             // 
             // buttonRates
@@ -126,11 +126,11 @@
             // 
             // panelPaymentsSubMenu
             // 
+            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelPaymentsSubMenu.Controls.Add(this.buttonTax);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonCredit);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonBills);
-            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.Name = "panelPaymentsSubMenu";
             // 
             // buttonTax
@@ -177,10 +177,10 @@
             // 
             // panelCardsSubMenu
             // 
+            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelCardsSubMenu.Controls.Add(this.buttonCreditCard);
             this.panelCardsSubMenu.Controls.Add(this.buttonDebitCard);
-            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.Name = "panelCardsSubMenu";
             // 
             // buttonCreditCard
@@ -226,18 +226,18 @@
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.SystemColors.HotTrack;
             resources.ApplyResources(this.panelChildForm, "panelChildForm");
+            this.panelChildForm.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panelChildForm.Name = "panelChildForm";
             // 
-            // FormHome
+            // FormMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "FormHome";
+            this.Name = "FormMain";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHome_FormClosed);
             this.panelSideMenu.ResumeLayout(false);
             this.panelExchangeSubMenu.ResumeLayout(false);
