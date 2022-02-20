@@ -15,16 +15,20 @@ namespace ANH_Bank
     {
         public FormSignIn(string lan)
         {
-            if (lan == "tr")
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("tr");
-            }
-            else 
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-            }
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
         }
+
+        #region Events
+
+        private void FormSignIn_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        #endregion
+
+        #region Methods
 
         private void RefreshForm()
         {
@@ -32,9 +36,6 @@ namespace ANH_Bank
             MyInitializeComponent();
         }
 
-        private void FormSignIn_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
+        #endregion
     }
 }
