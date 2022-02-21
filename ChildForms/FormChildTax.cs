@@ -5,9 +5,8 @@ namespace ANH_Bank
 {
     public partial class FormChildTax : Form
     {
-        public FormChildTax(string lan)
+        public FormChildTax()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
         }
 

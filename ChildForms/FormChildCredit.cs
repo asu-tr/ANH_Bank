@@ -1,13 +1,11 @@
-﻿using System.Threading;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace ANH_Bank
 {
     public partial class FormChildCredit : Form
     {
-        public FormChildCredit(string lan)
+        public FormChildCredit()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
         }
 

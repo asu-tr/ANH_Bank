@@ -5,9 +5,8 @@ namespace ANH_Bank
 {
     public partial class FormChildTransfers : Form
     {
-        public FormChildTransfers(string lan)
+        public FormChildTransfers()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
         }
 

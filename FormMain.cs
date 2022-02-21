@@ -9,9 +9,8 @@ namespace ANH_Bank
         int userID = 0;
         Form activeForm = null;
 
-        public FormMain(string lan, int id)
+        public FormMain(int id)
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
 
             userID = id;

@@ -5,9 +5,8 @@ namespace ANH_Bank
 {
     public partial class FormSignUp : Form
     {
-        public FormSignUp(string lan)
+        public FormSignUp()
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
         }
 
