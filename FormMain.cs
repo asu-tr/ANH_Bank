@@ -22,7 +22,7 @@ namespace ANH_Bank
 
         private void buttonMain_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormChildMain(Thread.CurrentThread.CurrentUICulture.Name));
+            OpenChildForm(new FormChildMain());
 
             HideSubMenus();
         }

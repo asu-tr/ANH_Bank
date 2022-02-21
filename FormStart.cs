@@ -38,14 +38,14 @@ namespace ANH_Bank
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
-            FormSignIn formSignIn = new FormSignIn(GetCurrentLanguage());
+            FormSignIn formSignIn = new FormSignIn();
             formSignIn.Show();
             this.Hide();
         }
 
         private void buttonSignUp_Click(object sender, EventArgs e)
         {
-            FormSignUp formSignUp = new FormSignUp(GetCurrentLanguage());
+            FormSignUp formSignUp = new FormSignUp();
             formSignUp.Show();
             this.Hide();
         }

@@ -83,11 +83,35 @@
     <Compile Include="ChildForms\FormChildDebitCard.Designer.cs">
       <DependentUpon>FormChildDebitCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\FormChildDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChildDeposit.Designer.cs">
+      <DependentUpon>FormChildDeposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\FormChildMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChildForms\FormChildMain.Designer.cs">
       <DependentUpon>FormChildMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormChildRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChildRates.Designer.cs">
+      <DependentUpon>FormChildRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormChildSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChildSell.Designer.cs">
+      <DependentUpon>FormChildSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormChildSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChildSettings.Designer.cs">
+      <DependentUpon>FormChildSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\FormChildTax.cs">
       <SubType>Form</SubType>
@@ -100,6 +124,12 @@
     </Compile>
     <Compile Include="ChildForms\FormChildTransfers.Designer.cs">
       <DependentUpon>FormChildTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormChildWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChildWithdraw.Designer.cs">
+      <DependentUpon>FormChildWithdraw.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -145,6 +175,9 @@
     <EmbeddedResource Include="ChildForms\FormChildDebitCard.resx">
       <DependentUpon>FormChildDebitCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildDeposit.resx">
+      <DependentUpon>FormChildDeposit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildMain.en.resx">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,11 +187,23 @@
     <EmbeddedResource Include="ChildForms\FormChildMain.tr.resx">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildRates.resx">
+      <DependentUpon>FormChildRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildSell.resx">
+      <DependentUpon>FormChildSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildSettings.resx">
+      <DependentUpon>FormChildSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildTax.resx">
       <DependentUpon>FormChildTax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildTransfers.resx">
       <DependentUpon>FormChildTransfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildWithdraw.resx">
+      <DependentUpon>FormChildWithdraw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.en.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

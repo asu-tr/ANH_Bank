@@ -38,7 +38,7 @@ namespace ANH_Bank
 
         private void OpenMainScreen(int id)
         {
-            FormMain fm = new FormMain(Thread.CurrentThread.CurrentUICulture.Name, id);
+            FormMain fm = new FormMain(id);
             fm.Show();
             this.Hide();
         }
