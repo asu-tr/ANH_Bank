@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace ANH_Bank
 {
-    public partial class FormChildMain : Form
+    public partial class FormChildCreditCard : Form
     {
-        public FormChildMain(string lan)
+        public FormChildCreditCard(string lan)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lan);
             RefreshForm();
