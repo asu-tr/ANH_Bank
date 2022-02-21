@@ -1,12 +1,12 @@
-﻿using System;
-using System.Threading;
+﻿using ANH_Bank.ChildForms;
+using System;
 using System.Windows.Forms;
 
 namespace ANH_Bank
 {
     public partial class FormMain : Form
     {
-        int userID = 0;
+        int userID = -1;
         Form activeForm = null;
 
         public FormMain(int id)
@@ -23,16 +23,12 @@ namespace ANH_Bank
         private void buttonMain_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormChildMain());
-
             HideSubMenus();
         }
 
         private void buttonAccounts_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildAccounts());
             HideSubMenus();
         }
 
@@ -45,19 +41,13 @@ namespace ANH_Bank
 
         private void buttonDebitCard_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildDebitCard());
             HideSubMenus();
         }
 
         private void buttonCreditCard_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildCreditCard());
             HideSubMenus();
         }
 
@@ -65,10 +55,7 @@ namespace ANH_Bank
 
         private void buttonTransfers_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildTransfers());
             HideSubMenus();
         }
 
@@ -146,19 +133,19 @@ namespace ANH_Bank
 
         private void buttonDeposit_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildDeposit());
             HideSubMenus();
         }
 
         private void buttonWithdraw_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
+            OpenChildForm(new FormChildWithdraw());
+            HideSubMenus();
+        }
 
+        private void buttonSettings_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormChildSettings());
             HideSubMenus();
         }
 
