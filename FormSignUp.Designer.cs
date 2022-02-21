@@ -30,17 +30,20 @@ namespace ANH_Bank
                 Label l = control as Label;
                 if (l != null)
                 {
-                    l.Font = ANHColorsFonts.FontANH_header3;
+                    l.Font = ANHColorsFonts.Font_header3;
                 }
 
                 TextBox t = control as TextBox;
                 if (t != null)
                 {
-                    t.Font = ANHColorsFonts.FontANH_default;
+                    t.Font = ANHColorsFonts.Font_default;
                 }
+
+                this.BackColor = ANHColorsFonts.Color_MainBG;
             }
 
-            this.buttonSignUp.Font = ANHColorsFonts.FontANH_header2;
+            this.buttonSignUp.Font = ANHColorsFonts.Font_header2;
+            this.buttonSignUp.BackColor = ANHColorsFonts.Color_ButtonMainBack;
 
             System.DateTime today = System.DateTime.Now;
             System.DateTime max = new System.DateTime(today.Year - 18, today.Month, today.Day, today.Hour, today.Minute, today.Second);

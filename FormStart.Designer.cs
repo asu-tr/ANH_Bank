@@ -22,10 +22,15 @@
 
         private void MyInitializeComponent()
         {
-            this.labelWelcome.Font = ANHColorsFonts.FontANH_header1;
-            this.buttonSignIn.Font = ANHColorsFonts.FontANH_header2;
-            this.buttonSignUp.Font = ANHColorsFonts.FontANH_header2;
-            this.buttonLanguage.Font = ANHColorsFonts.FontANH_default;
+            this.labelWelcome.Font = ANHColorsFonts.Font_header1;
+            this.buttonSignIn.Font = ANHColorsFonts.Font_header2;
+            this.buttonSignUp.Font = ANHColorsFonts.Font_header2;
+            this.buttonLanguage.Font = ANHColorsFonts.Font_default;
+
+            this.BackColor = ANHColorsFonts.Color_MainBG;
+            this.buttonSignIn.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+            this.buttonSignUp.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+            this.buttonLanguage.BackColor = ANHColorsFonts.Color_ButtonMainBack;
         }
 
         #region Windows Form Designer generated code

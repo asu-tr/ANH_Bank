@@ -22,8 +22,10 @@
 
         private void MyInitializeComponent()
         {
-            this.labelWelcome.Font = ANHColorsFonts.FontANH_header2;
-            this.labelLatest.Font = ANHColorsFonts.FontANH_header2;
+            this.labelWelcome.Font = ANHColorsFonts.Font_header2;
+            this.labelLatest.Font = ANHColorsFonts.Font_header2;
+
+            this.BackColor = ANHColorsFonts.Color_MainBG;
         }
 
             #region Windows Form Designer generated code

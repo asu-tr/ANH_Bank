@@ -1,4 +1,7 @@
-﻿namespace ANH_Bank
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
+
+namespace ANH_Bank
 {
     partial class FormMain
     {
@@ -25,6 +28,39 @@
             this.panelCardsSubMenu.Visible = false;
             this.panelPaymentsSubMenu.Visible = false;
             this.panelExchangeSubMenu.Visible = false;
+
+            List<Button> MainButtons = new List<Button>();
+            MainButtons.Add(this.buttonMain);
+            MainButtons.Add(this.buttonAccounts);
+            MainButtons.Add(this.buttonCards);
+            MainButtons.Add(this.buttonTransfers);
+            MainButtons.Add(this.buttonPayments);
+            MainButtons.Add(this.buttonExchange);
+            MainButtons.Add(this.buttonDeposit);
+            MainButtons.Add(this.buttonWithdraw);
+            MainButtons.Add(this.buttonSettings);
+
+            foreach (Button btn in MainButtons)
+            {
+                btn.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+                btn.Font = ANHColorsFonts.Font_MenuMain;
+            }
+
+            List<Button> SubButtons = new List<Button>();
+            SubButtons.Add(this.buttonDebitCard);
+            SubButtons.Add(this.buttonCreditCard);
+            SubButtons.Add(this.buttonBills);
+            SubButtons.Add(this.buttonCredit);
+            SubButtons.Add(this.buttonTax);
+            SubButtons.Add(this.buttonBuy);
+            SubButtons.Add(this.buttonSell);
+            SubButtons.Add(this.buttonRates);
+
+            foreach (Button btn in SubButtons)
+            {
+                btn.BackColor = ANHColorsFonts.Color_ButtonSubBack;
+                btn.Font = ANHColorsFonts.Font_MenuSub;
+            }
 
             //this.labelID.Font = ANHColorsFonts.FontANH_header2;
             //this.textBoxID.Font = ANHColorsFonts.FontANH_default;
@@ -71,7 +107,7 @@
             // panelSideMenu
             // 
             resources.ApplyResources(this.panelSideMenu, "panelSideMenu");
-            this.panelSideMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelSideMenu.BackColor = System.Drawing.Color.Salmon;
             this.panelSideMenu.Controls.Add(this.buttonSettings);
             this.panelSideMenu.Controls.Add(this.buttonWithdraw);
             this.panelSideMenu.Controls.Add(this.buttonDeposit);
@@ -89,12 +125,14 @@
             // buttonSettings
             // 
             resources.ApplyResources(this.buttonSettings, "buttonSettings");
+            this.buttonSettings.FlatAppearance.BorderSize = 0;
             this.buttonSettings.Name = "buttonSettings";
             this.buttonSettings.UseVisualStyleBackColor = true;
             // 
             // buttonWithdraw
             // 
             resources.ApplyResources(this.buttonWithdraw, "buttonWithdraw");
+            this.buttonWithdraw.FlatAppearance.BorderSize = 0;
             this.buttonWithdraw.Name = "buttonWithdraw";
             this.buttonWithdraw.UseVisualStyleBackColor = true;
             this.buttonWithdraw.Click += new System.EventHandler(this.buttonWithdraw_Click);
@@ -102,17 +140,18 @@
             // buttonDeposit
             // 
             resources.ApplyResources(this.buttonDeposit, "buttonDeposit");
+            this.buttonDeposit.FlatAppearance.BorderSize = 0;
             this.buttonDeposit.Name = "buttonDeposit";
             this.buttonDeposit.UseVisualStyleBackColor = true;
             this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
             // 
             // panelExchangeSubMenu
             // 
-            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelExchangeSubMenu.Controls.Add(this.buttonRates);
             this.panelExchangeSubMenu.Controls.Add(this.buttonSell);
             this.panelExchangeSubMenu.Controls.Add(this.buttonBuy);
+            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.Name = "panelExchangeSubMenu";
             // 
             // buttonRates
@@ -152,11 +191,11 @@
             // 
             // panelPaymentsSubMenu
             // 
-            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelPaymentsSubMenu.Controls.Add(this.buttonTax);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonCredit);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonBills);
+            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.Name = "panelPaymentsSubMenu";
             // 
             // buttonTax
@@ -197,16 +236,17 @@
             // buttonTransfers
             // 
             resources.ApplyResources(this.buttonTransfers, "buttonTransfers");
+            this.buttonTransfers.FlatAppearance.BorderSize = 0;
             this.buttonTransfers.Name = "buttonTransfers";
             this.buttonTransfers.UseVisualStyleBackColor = true;
             this.buttonTransfers.Click += new System.EventHandler(this.buttonTransfers_Click);
             // 
             // panelCardsSubMenu
             // 
-            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelCardsSubMenu.Controls.Add(this.buttonCreditCard);
             this.panelCardsSubMenu.Controls.Add(this.buttonDebitCard);
+            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.Name = "panelCardsSubMenu";
             // 
             // buttonCreditCard
@@ -239,6 +279,7 @@
             // buttonAccounts
             // 
             resources.ApplyResources(this.buttonAccounts, "buttonAccounts");
+            this.buttonAccounts.FlatAppearance.BorderSize = 0;
             this.buttonAccounts.Name = "buttonAccounts";
             this.buttonAccounts.UseVisualStyleBackColor = true;
             this.buttonAccounts.Click += new System.EventHandler(this.buttonAccounts_Click);
@@ -246,14 +287,15 @@
             // buttonMain
             // 
             resources.ApplyResources(this.buttonMain, "buttonMain");
+            this.buttonMain.FlatAppearance.BorderSize = 0;
             this.buttonMain.Name = "buttonMain";
             this.buttonMain.UseVisualStyleBackColor = true;
             this.buttonMain.Click += new System.EventHandler(this.buttonMain_Click);
             // 
             // panelChildForm
             // 
+            this.panelChildForm.BackColor = System.Drawing.Color.SeaShell;
             resources.ApplyResources(this.panelChildForm, "panelChildForm");
-            this.panelChildForm.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panelChildForm.Name = "panelChildForm";
             // 
             // FormMain

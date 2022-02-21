@@ -21,12 +21,15 @@
         }
         private void MyInitializeComponent()
         {
-            this.labelID.Font = ANHColorsFonts.FontANH_header2;
-            this.textBoxID.Font = ANHColorsFonts.FontANH_default;
-            this.labelPwd.Font = ANHColorsFonts.FontANH_header2;
-            this.textBoxPwd.Font = ANHColorsFonts.FontANH_default;
-            this.buttonSignIn.Font = ANHColorsFonts.FontANH_header1;
-            this.labelForgotPwd.Font = ANHColorsFonts.FontANH_default;
+            this.labelID.Font = ANHColorsFonts.Font_header2;
+            this.textBoxID.Font = ANHColorsFonts.Font_default;
+            this.labelPwd.Font = ANHColorsFonts.Font_header2;
+            this.textBoxPwd.Font = ANHColorsFonts.Font_default;
+            this.buttonSignIn.Font = ANHColorsFonts.Font_header1;
+            this.labelForgotPwd.Font = ANHColorsFonts.Font_default;
+
+            this.BackColor = ANHColorsFonts.Color_MainBG;
+            this.buttonSignIn.BackColor = ANHColorsFonts.Color_ButtonMainBack;
         }
 
         #region Windows Form Designer generated code
