@@ -41,6 +41,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.buttonWithdraw = new System.Windows.Forms.Button();
+            this.buttonDeposit = new System.Windows.Forms.Button();
             this.panelExchangeSubMenu = new System.Windows.Forms.Panel();
             this.buttonRates = new System.Windows.Forms.Button();
             this.buttonSell = new System.Windows.Forms.Button();
@@ -69,6 +71,8 @@
             // 
             resources.ApplyResources(this.panelSideMenu, "panelSideMenu");
             this.panelSideMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelSideMenu.Controls.Add(this.buttonWithdraw);
+            this.panelSideMenu.Controls.Add(this.buttonDeposit);
             this.panelSideMenu.Controls.Add(this.panelExchangeSubMenu);
             this.panelSideMenu.Controls.Add(this.buttonExchange);
             this.panelSideMenu.Controls.Add(this.panelPaymentsSubMenu);
@@ -80,13 +84,27 @@
             this.panelSideMenu.Controls.Add(this.buttonMain);
             this.panelSideMenu.Name = "panelSideMenu";
             // 
+            // buttonWithdraw
+            // 
+            resources.ApplyResources(this.buttonWithdraw, "buttonWithdraw");
+            this.buttonWithdraw.Name = "buttonWithdraw";
+            this.buttonWithdraw.UseVisualStyleBackColor = true;
+            this.buttonWithdraw.Click += new System.EventHandler(this.buttonWithdraw_Click);
+            // 
+            // buttonDeposit
+            // 
+            resources.ApplyResources(this.buttonDeposit, "buttonDeposit");
+            this.buttonDeposit.Name = "buttonDeposit";
+            this.buttonDeposit.UseVisualStyleBackColor = true;
+            this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
+            // 
             // panelExchangeSubMenu
             // 
-            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelExchangeSubMenu.Controls.Add(this.buttonRates);
             this.panelExchangeSubMenu.Controls.Add(this.buttonSell);
             this.panelExchangeSubMenu.Controls.Add(this.buttonBuy);
+            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.Name = "panelExchangeSubMenu";
             // 
             // buttonRates
@@ -126,11 +144,11 @@
             // 
             // panelPaymentsSubMenu
             // 
-            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelPaymentsSubMenu.Controls.Add(this.buttonTax);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonCredit);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonBills);
+            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.Name = "panelPaymentsSubMenu";
             // 
             // buttonTax
@@ -177,10 +195,10 @@
             // 
             // panelCardsSubMenu
             // 
-            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelCardsSubMenu.Controls.Add(this.buttonCreditCard);
             this.panelCardsSubMenu.Controls.Add(this.buttonDebitCard);
+            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.Name = "panelCardsSubMenu";
             // 
             // buttonCreditCard
@@ -226,8 +244,8 @@
             // 
             // panelChildForm
             // 
-            resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.BackColor = System.Drawing.SystemColors.HotTrack;
+            resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.Name = "panelChildForm";
             // 
             // FormMain
@@ -268,5 +286,7 @@
         private System.Windows.Forms.Button buttonBuy;
         private System.Windows.Forms.Button buttonExchange;
         private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.Button buttonWithdraw;
+        private System.Windows.Forms.Button buttonDeposit;
     }
 }

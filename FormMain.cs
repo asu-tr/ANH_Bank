@@ -154,6 +154,24 @@ namespace ANH_Bank
 
         #endregion
 
+        private void buttonDeposit_Click(object sender, EventArgs e)
+        {
+            //
+            // CODE GOES HERE
+            //
+
+            HideSubMenus();
+        }
+
+        private void buttonWithdraw_Click(object sender, EventArgs e)
+        {
+            //
+            // CODE GOES HERE
+            //
+
+            HideSubMenus();
+        }
+
         #endregion
 
         private void FormHome_FormClosed(object sender, FormClosedEventArgs e)
@@ -218,14 +236,7 @@ namespace ANH_Bank
                 subMenu.Visible = false;
         }
 
-
-
-
-
         #endregion
 
-        
-
-        
     }
 }
