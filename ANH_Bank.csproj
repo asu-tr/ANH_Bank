@@ -47,58 +47,58 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ANHColorsFonts.cs" />
-    <Compile Include="FormChildAccounts.cs">
+    <Compile Include="ChildForms\FormChildAccounts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildAccounts.Designer.cs">
+    <Compile Include="ChildForms\FormChildAccounts.Designer.cs">
       <DependentUpon>FormChildAccounts.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildBills.cs">
+    <Compile Include="ChildForms\FormChildBills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildBills.Designer.cs">
+    <Compile Include="ChildForms\FormChildBills.Designer.cs">
       <DependentUpon>FormChildBills.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildBuy.cs">
+    <Compile Include="ChildForms\FormChildBuy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildBuy.Designer.cs">
+    <Compile Include="ChildForms\FormChildBuy.Designer.cs">
       <DependentUpon>FormChildBuy.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildCredit.cs">
+    <Compile Include="ChildForms\FormChildCredit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildCredit.Designer.cs">
+    <Compile Include="ChildForms\FormChildCredit.Designer.cs">
       <DependentUpon>FormChildCredit.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildCreditCard.cs">
+    <Compile Include="ChildForms\FormChildCreditCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildCreditCard.Designer.cs">
+    <Compile Include="ChildForms\FormChildCreditCard.Designer.cs">
       <DependentUpon>FormChildCreditCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildDebitCard.cs">
+    <Compile Include="ChildForms\FormChildDebitCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildDebitCard.Designer.cs">
+    <Compile Include="ChildForms\FormChildDebitCard.Designer.cs">
       <DependentUpon>FormChildDebitCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildMain.cs">
+    <Compile Include="ChildForms\FormChildMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildMain.Designer.cs">
+    <Compile Include="ChildForms\FormChildMain.Designer.cs">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildTax.cs">
+    <Compile Include="ChildForms\FormChildTax.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildTax.Designer.cs">
+    <Compile Include="ChildForms\FormChildTax.Designer.cs">
       <DependentUpon>FormChildTax.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChildTransfers.cs">
+    <Compile Include="ChildForms\FormChildTransfers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChildTransfers.Designer.cs">
+    <Compile Include="ChildForms\FormChildTransfers.Designer.cs">
       <DependentUpon>FormChildTransfers.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
@@ -127,37 +127,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormChildAccounts.resx">
+    <EmbeddedResource Include="ChildForms\FormChildAccounts.resx">
       <DependentUpon>FormChildAccounts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildBills.resx">
+    <EmbeddedResource Include="ChildForms\FormChildBills.resx">
       <DependentUpon>FormChildBills.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildBuy.resx">
+    <EmbeddedResource Include="ChildForms\FormChildBuy.resx">
       <DependentUpon>FormChildBuy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildCredit.resx">
+    <EmbeddedResource Include="ChildForms\FormChildCredit.resx">
       <DependentUpon>FormChildCredit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildCreditCard.resx">
+    <EmbeddedResource Include="ChildForms\FormChildCreditCard.resx">
       <DependentUpon>FormChildCreditCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildDebitCard.resx">
+    <EmbeddedResource Include="ChildForms\FormChildDebitCard.resx">
       <DependentUpon>FormChildDebitCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildMain.en.resx">
+    <EmbeddedResource Include="ChildForms\FormChildMain.en.resx">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildMain.resx">
+    <EmbeddedResource Include="ChildForms\FormChildMain.resx">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildMain.tr.resx">
+    <EmbeddedResource Include="ChildForms\FormChildMain.tr.resx">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildTax.resx">
+    <EmbeddedResource Include="ChildForms\FormChildTax.resx">
       <DependentUpon>FormChildTax.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChildTransfers.resx">
+    <EmbeddedResource Include="ChildForms\FormChildTransfers.resx">
       <DependentUpon>FormChildTransfers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.en.resx">
