@@ -41,6 +41,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.buttonSettings = new System.Windows.Forms.Button();
             this.buttonWithdraw = new System.Windows.Forms.Button();
             this.buttonDeposit = new System.Windows.Forms.Button();
             this.panelExchangeSubMenu = new System.Windows.Forms.Panel();
@@ -71,6 +72,7 @@
             // 
             resources.ApplyResources(this.panelSideMenu, "panelSideMenu");
             this.panelSideMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelSideMenu.Controls.Add(this.buttonSettings);
             this.panelSideMenu.Controls.Add(this.buttonWithdraw);
             this.panelSideMenu.Controls.Add(this.buttonDeposit);
             this.panelSideMenu.Controls.Add(this.panelExchangeSubMenu);
@@ -83,6 +85,12 @@
             this.panelSideMenu.Controls.Add(this.buttonAccounts);
             this.panelSideMenu.Controls.Add(this.buttonMain);
             this.panelSideMenu.Name = "panelSideMenu";
+            // 
+            // buttonSettings
+            // 
+            resources.ApplyResources(this.buttonSettings, "buttonSettings");
+            this.buttonSettings.Name = "buttonSettings";
+            this.buttonSettings.UseVisualStyleBackColor = true;
             // 
             // buttonWithdraw
             // 
@@ -100,11 +108,11 @@
             // 
             // panelExchangeSubMenu
             // 
+            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelExchangeSubMenu.Controls.Add(this.buttonRates);
             this.panelExchangeSubMenu.Controls.Add(this.buttonSell);
             this.panelExchangeSubMenu.Controls.Add(this.buttonBuy);
-            resources.ApplyResources(this.panelExchangeSubMenu, "panelExchangeSubMenu");
             this.panelExchangeSubMenu.Name = "panelExchangeSubMenu";
             // 
             // buttonRates
@@ -144,11 +152,11 @@
             // 
             // panelPaymentsSubMenu
             // 
+            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelPaymentsSubMenu.Controls.Add(this.buttonTax);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonCredit);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonBills);
-            resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.Name = "panelPaymentsSubMenu";
             // 
             // buttonTax
@@ -195,10 +203,10 @@
             // 
             // panelCardsSubMenu
             // 
+            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelCardsSubMenu.Controls.Add(this.buttonCreditCard);
             this.panelCardsSubMenu.Controls.Add(this.buttonDebitCard);
-            resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
             this.panelCardsSubMenu.Name = "panelCardsSubMenu";
             // 
             // buttonCreditCard
@@ -244,8 +252,8 @@
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.SystemColors.HotTrack;
             resources.ApplyResources(this.panelChildForm, "panelChildForm");
+            this.panelChildForm.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panelChildForm.Name = "panelChildForm";
             // 
             // FormMain
@@ -288,5 +296,6 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button buttonWithdraw;
         private System.Windows.Forms.Button buttonDeposit;
+        private System.Windows.Forms.Button buttonSettings;
     }
 }

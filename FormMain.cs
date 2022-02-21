@@ -30,9 +30,7 @@ namespace ANH_Bank
 
         private void buttonMain_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
+            OpenChildForm(new FormChildMain(Thread.CurrentThread.CurrentUICulture.Name));
 
             HideSubMenus();
         }
