@@ -76,6 +76,7 @@
             resources.ApplyResources(this.buttonSignIn, "buttonSignIn");
             this.buttonSignIn.Name = "buttonSignIn";
             this.buttonSignIn.UseVisualStyleBackColor = true;
+            this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
             // 
             // FormSignIn
             // 
