@@ -47,6 +47,60 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ANHColorsFonts.cs" />
+    <Compile Include="FormChildAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildAccounts.Designer.cs">
+      <DependentUpon>FormChildAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildBills.Designer.cs">
+      <DependentUpon>FormChildBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildBuy.Designer.cs">
+      <DependentUpon>FormChildBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCredit.Designer.cs">
+      <DependentUpon>FormChildCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildCreditCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildCreditCard.Designer.cs">
+      <DependentUpon>FormChildCreditCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildDebitCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildDebitCard.Designer.cs">
+      <DependentUpon>FormChildDebitCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildMain.Designer.cs">
+      <DependentUpon>FormChildMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildTax.Designer.cs">
+      <DependentUpon>FormChildTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChildTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChildTransfers.Designer.cs">
+      <DependentUpon>FormChildTransfers.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,14 +127,49 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormChildAccounts.resx">
+      <DependentUpon>FormChildAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildBills.resx">
+      <DependentUpon>FormChildBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildBuy.resx">
+      <DependentUpon>FormChildBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildCredit.resx">
+      <DependentUpon>FormChildCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildCreditCard.resx">
+      <DependentUpon>FormChildCreditCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildDebitCard.resx">
+      <DependentUpon>FormChildDebitCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildMain.en.resx">
+      <DependentUpon>FormChildMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildMain.resx">
+      <DependentUpon>FormChildMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildMain.tr.resx">
+      <DependentUpon>FormChildMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildTax.resx">
+      <DependentUpon>FormChildTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChildTransfers.resx">
+      <DependentUpon>FormChildTransfers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.en.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.tr.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSignIn.en.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
