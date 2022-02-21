@@ -1,4 +1,4 @@
-﻿namespace ANH_Bank
+﻿namespace ANH_Bank.ChildForms
 {
     partial class FormChildMain
     {

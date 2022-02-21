@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace ANH_Bank
+namespace ANH_Bank.ChildForms
 {
     public partial class FormChildBuy : Form
     {
