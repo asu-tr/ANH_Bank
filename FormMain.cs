@@ -12,7 +12,6 @@ namespace ANH_Bank
         public FormMain(int id)
         {
             RefreshForm();
-
             userID = id;
         }
 
@@ -68,28 +67,19 @@ namespace ANH_Bank
 
         private void buttonBills_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildBills());
             HideSubMenus();
         }
 
         private void buttonCredit_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildCredit());
             HideSubMenus();
         }
 
         private void buttonTax_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildTax());
             HideSubMenus();
         }
 
@@ -104,28 +94,19 @@ namespace ANH_Bank
 
         private void buttonBuy_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildBuy());
             HideSubMenus();
         }
 
         private void buttonSell_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildSell());
             HideSubMenus();
         }
 
         private void buttonRates_Click(object sender, EventArgs e)
         {
-            //
-            // CODE GOES HERE
-            //
-
+            OpenChildForm(new FormChildRates());
             HideSubMenus();
         }
 
