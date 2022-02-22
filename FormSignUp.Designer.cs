@@ -38,9 +38,9 @@ namespace ANH_Bank
                 {
                     t.Font = ANHColorsFonts.Font_default;
                 }
-
-                this.BackColor = ANHColorsFonts.Color_MainBG;
             }
+
+            this.BackColor = ANHColorsFonts.Color_MainBG;
 
             this.buttonSignUp.Font = ANHColorsFonts.Font_header2;
             this.buttonSignUp.BackColor = ANHColorsFonts.Color_ButtonMainBack;
