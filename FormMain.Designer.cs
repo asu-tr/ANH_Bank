@@ -148,7 +148,7 @@ namespace ANH_Bank
             // 
             // panelExchangeSubMenu
             // 
-            this.panelExchangeSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelExchangeSubMenu.BackColor = System.Drawing.Color.Salmon;
             this.panelExchangeSubMenu.Controls.Add(this.buttonRates);
             this.panelExchangeSubMenu.Controls.Add(this.buttonSell);
             this.panelExchangeSubMenu.Controls.Add(this.buttonBuy);
@@ -192,7 +192,7 @@ namespace ANH_Bank
             // 
             // panelPaymentsSubMenu
             // 
-            this.panelPaymentsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelPaymentsSubMenu.BackColor = System.Drawing.Color.Salmon;
             this.panelPaymentsSubMenu.Controls.Add(this.buttonTax);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonCredit);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonBills);
@@ -244,7 +244,7 @@ namespace ANH_Bank
             // 
             // panelCardsSubMenu
             // 
-            this.panelCardsSubMenu.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panelCardsSubMenu.BackColor = System.Drawing.Color.Salmon;
             this.panelCardsSubMenu.Controls.Add(this.buttonCreditCard);
             this.panelCardsSubMenu.Controls.Add(this.buttonDebitCard);
             resources.ApplyResources(this.panelCardsSubMenu, "panelCardsSubMenu");
