@@ -6,13 +6,13 @@ namespace ANH_Bank
 {
     public partial class FormMain : Form
     {
-        int userID = -1;
+        int UserID = -1;
         Form activeForm = null;
 
         public FormMain(int id)
         {
             RefreshForm();
-            userID = id;
+            UserID = id;
         }
 
         #region Events
@@ -27,7 +27,7 @@ namespace ANH_Bank
 
         private void buttonAccounts_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormChildAccounts());
+            OpenChildForm(new FormChildAccounts(UserID));
             HideSubMenus();
         }
 
