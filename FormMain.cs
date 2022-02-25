@@ -71,12 +71,6 @@ namespace ANH_Bank
             HideSubMenus();
         }
 
-        private void buttonCredit_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormChildCredit());
-            HideSubMenus();
-        }
-
         private void buttonTax_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormChildTax());

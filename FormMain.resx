@@ -133,7 +133,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 640</value>
+    <value>0, 605</value>
   </data>
   <data name="buttonSettings.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -172,7 +172,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonWithdraw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 595</value>
+    <value>0, 560</value>
   </data>
   <data name="buttonWithdraw.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -211,7 +211,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonDeposit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 550</value>
+    <value>0, 515</value>
   </data>
   <data name="buttonDeposit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -352,7 +352,7 @@
     <value>Top</value>
   </data>
   <data name="panelExchangeSubMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 445</value>
+    <value>0, 410</value>
   </data>
   <data name="panelExchangeSubMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 105</value>
@@ -379,7 +379,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonExchange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 400</value>
+    <value>0, 365</value>
   </data>
   <data name="buttonExchange.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 0, 0</value>
@@ -415,7 +415,7 @@
     <value>Flat</value>
   </data>
   <data name="buttonTax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 70</value>
+    <value>0, 35</value>
   </data>
   <data name="buttonTax.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
@@ -443,42 +443,6 @@
   </data>
   <data name="&gt;&gt;buttonTax.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="buttonCredit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="buttonCredit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="buttonCredit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 35</value>
-  </data>
-  <data name="buttonCredit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="buttonCredit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 35</value>
-  </data>
-  <data name="buttonCredit.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonCredit.Text" xml:space="preserve">
-    <value>buttonCredit</value>
-  </data>
-  <data name="buttonCredit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;buttonCredit.Name" xml:space="preserve">
-    <value>buttonCredit</value>
-  </data>
-  <data name="&gt;&gt;buttonCredit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonCredit.Parent" xml:space="preserve">
-    <value>panelPaymentsSubMenu</value>
-  </data>
-  <data name="&gt;&gt;buttonCredit.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="buttonBills.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -514,7 +478,7 @@
     <value>panelPaymentsSubMenu</value>
   </data>
   <data name="&gt;&gt;buttonBills.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="panelPaymentsSubMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -523,7 +487,7 @@
     <value>0, 295</value>
   </data>
   <data name="panelPaymentsSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 105</value>
+    <value>135, 70</value>
   </data>
   <data name="panelPaymentsSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>

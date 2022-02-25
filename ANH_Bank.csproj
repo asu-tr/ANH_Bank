@@ -68,12 +68,6 @@
     <Compile Include="ChildForms\FormChildBuy.Designer.cs">
       <DependentUpon>FormChildBuy.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\FormChildCredit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\FormChildCredit.Designer.cs">
-      <DependentUpon>FormChildCredit.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChildForms\FormChildCreditCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,9 +169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildBuy.resx">
       <DependentUpon>FormChildBuy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\FormChildCredit.resx">
-      <DependentUpon>FormChildCredit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildCreditCard.resx">
       <DependentUpon>FormChildCreditCard.cs</DependentUpon>

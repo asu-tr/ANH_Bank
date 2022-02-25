@@ -87,7 +87,6 @@ namespace ANH_Bank
             this.buttonExchange = new System.Windows.Forms.Button();
             this.panelPaymentsSubMenu = new System.Windows.Forms.Panel();
             this.buttonTax = new System.Windows.Forms.Button();
-            this.buttonCredit = new System.Windows.Forms.Button();
             this.buttonBills = new System.Windows.Forms.Button();
             this.buttonPayments = new System.Windows.Forms.Button();
             this.buttonTransfers = new System.Windows.Forms.Button();
@@ -194,7 +193,6 @@ namespace ANH_Bank
             // 
             this.panelPaymentsSubMenu.BackColor = System.Drawing.Color.Salmon;
             this.panelPaymentsSubMenu.Controls.Add(this.buttonTax);
-            this.panelPaymentsSubMenu.Controls.Add(this.buttonCredit);
             this.panelPaymentsSubMenu.Controls.Add(this.buttonBills);
             resources.ApplyResources(this.panelPaymentsSubMenu, "panelPaymentsSubMenu");
             this.panelPaymentsSubMenu.Name = "panelPaymentsSubMenu";
@@ -207,15 +205,6 @@ namespace ANH_Bank
             this.buttonTax.Name = "buttonTax";
             this.buttonTax.UseVisualStyleBackColor = true;
             this.buttonTax.Click += new System.EventHandler(this.buttonTax_Click);
-            // 
-            // buttonCredit
-            // 
-            resources.ApplyResources(this.buttonCredit, "buttonCredit");
-            this.buttonCredit.FlatAppearance.BorderSize = 0;
-            this.buttonCredit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonCredit.Name = "buttonCredit";
-            this.buttonCredit.UseVisualStyleBackColor = true;
-            this.buttonCredit.Click += new System.EventHandler(this.buttonCredit_Click);
             // 
             // buttonBills
             // 
@@ -326,7 +315,6 @@ namespace ANH_Bank
         private System.Windows.Forms.Button buttonAccounts;
         private System.Windows.Forms.Button buttonMain;
         private System.Windows.Forms.Panel panelPaymentsSubMenu;
-        private System.Windows.Forms.Button buttonCredit;
         private System.Windows.Forms.Button buttonBills;
         private System.Windows.Forms.Button buttonPayments;
         private System.Windows.Forms.Button buttonTransfers;
