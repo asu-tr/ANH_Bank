@@ -1,0 +1,8 @@
+﻿namespace ANH_Bank.Models
+{
+    public class SecurityQuestion
+    {
+        public int Id { get; set; }
+        public string Question { get; set; }
+    }
+}

@@ -50,7 +50,6 @@ namespace ANH_Bank
             SubButtons.Add(this.buttonDebitCard);
             SubButtons.Add(this.buttonCreditCard);
             SubButtons.Add(this.buttonBills);
-            SubButtons.Add(this.buttonCredit);
             SubButtons.Add(this.buttonTax);
             SubButtons.Add(this.buttonBuy);
             SubButtons.Add(this.buttonSell);
