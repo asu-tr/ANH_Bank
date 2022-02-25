@@ -1,5 +1,6 @@
 ﻿using ANH_Bank.Models;
 using System;
+using System.Configuration;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace ANH_Bank
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             RefreshForm();
         }
+
 
         #region Events
 
@@ -54,6 +56,11 @@ namespace ANH_Bank
             this.Hide();
         }
 
+        private void FormStart_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         #endregion
 
 
@@ -71,8 +78,7 @@ namespace ANH_Bank
             MyInitializeComponent();
         }
 
-        #endregion
 
-        
+        #endregion
     }
 }

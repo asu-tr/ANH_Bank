@@ -16,7 +16,7 @@ namespace ANH_Bank
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormStart());
+            Application.Run(new FormServer());
         }
     }
 }

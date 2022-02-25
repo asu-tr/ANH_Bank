@@ -84,6 +84,7 @@
             this.Controls.Add(this.buttonSignIn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormStart";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStart_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
