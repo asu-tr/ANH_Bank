@@ -130,6 +130,10 @@
   <data name="labelFN.Text" xml:space="preserve">
     <value>Adı:</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBoxFN.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
   <data name="labelBD.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 16</value>
   </data>

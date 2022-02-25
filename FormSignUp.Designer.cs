@@ -157,8 +157,8 @@ namespace ANH_Bank
             // 
             // comboBoxSecQ
             // 
-            resources.ApplyResources(this.comboBoxSecQ, "comboBoxSecQ");
             this.comboBoxSecQ.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxSecQ, "comboBoxSecQ");
             this.comboBoxSecQ.Name = "comboBoxSecQ";
             // 
             // textBoxSecA
@@ -171,6 +171,7 @@ namespace ANH_Bank
             resources.ApplyResources(this.buttonSignUp, "buttonSignUp");
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.UseVisualStyleBackColor = true;
+            this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);
             // 
             // labelSecA
             // 
