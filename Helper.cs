@@ -1,6 +1,7 @@
 ﻿using ANH_Bank.Models;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace ANH_Bank
 {
@@ -12,6 +13,23 @@ namespace ANH_Bank
                 return;
 
             context.Database.Create();
+
+            context.Currencies.Add(new Models.Currency { Name = "TRY" });
+            context.Currencies.Add(new Models.Currency { Name = "USD" });
+            context.Currencies.Add(new Models.Currency { Name = "EUR" });
+            context.Currencies.Add(new Models.Currency { Name = "GBP" });
+
+            context.PaymentTypes.Add(new Models.PaymentType { Description = "Card Purchases" });
+            context.PaymentTypes.Add(new Models.PaymentType { Description = "Taxes" });
+            context.PaymentTypes.Add(new Models.PaymentType { Description = "Bills" });
+
+            context.SecurityQuestions.Add(new SecurityQuestion { Question = "fav_color" });
+            context.SecurityQuestions.Add(new SecurityQuestion { Question = "pet_name" });
+            context.SecurityQuestions.Add(new SecurityQuestion { Question = "bff_name" });
+
+            // question translations
+
+            context.SaveChanges();
         }
 
 
