@@ -18,6 +18,7 @@ namespace ANH_Bank.Models
         public DbSet<Payment> Payments { get; set; }
         public DbSet<PaymentType> PaymentTypes { get; set; }
         public DbSet<SecurityQuestion> SecurityQuestions { get; set; }
+        public DbSet<SecurityQuestionTranslation> SecurityQuestionTranslations { get; set; }
         public DbSet<Transfer> Transfers { get; set; }
         public DbSet<User> Users { get; set; }
     }
