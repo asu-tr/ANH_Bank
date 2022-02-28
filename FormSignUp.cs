@@ -35,7 +35,7 @@ namespace ANH_Bank
         private void buttonSignUp_Click(object sender, System.EventArgs e)
         {
             User user = new User();
-            user.TCKN = long.Parse(textBoxID.Text);
+            user.TCKN = textBoxID.Text;
 
             Random rnd = new Random();
             user.Password = rnd.Next(100000, 999999).ToString();
