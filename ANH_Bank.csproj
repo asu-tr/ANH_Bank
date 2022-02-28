@@ -185,6 +185,7 @@
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\PaymentType.cs" />
     <Compile Include="Models\SecurityQuestion.cs" />
+    <Compile Include="Models\SecurityQuestionTranslation.cs" />
     <Compile Include="Models\Transfer.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
