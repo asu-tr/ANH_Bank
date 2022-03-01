@@ -23,6 +23,8 @@ namespace ANH_Bank
             {
                 service2.StartupType = ServiceStartMode.Automatic.ToString();
                 service.Start();
+                Application.Restart();
+                Environment.Exit(0);
             }
                 
 
