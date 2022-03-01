@@ -1,16 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
+﻿using System;
 using System.Data;
 using System.Data.Sql;
-using System.Drawing;
-using System.Linq;
 using System.ServiceProcess;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ANH_Bank
@@ -26,9 +17,14 @@ namespace ANH_Bank
         private void FormServer_Load(object sender, EventArgs e)
         {
             ServiceController service = new ServiceController("SQLBrowser");
+            ServiceCtrl service2 = new ServiceCtrl("SQLBrowser");
 
             if ((service.Status.Equals(ServiceControllerStatus.Stopped)) || (service.Status.Equals(ServiceControllerStatus.StopPending)))
+            {
+                service2.StartupType = ServiceStartMode.Automatic.ToString();
                 service.Start();
+            }
+                
 
             string myServer = Environment.MachineName;
 
