@@ -28,40 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormServer));
             this.comboBoxServerName = new System.Windows.Forms.ComboBox();
             this.buttonConnect = new System.Windows.Forms.Button();
+            this.labelServer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBoxServerName
             // 
+            resources.ApplyResources(this.comboBoxServerName, "comboBoxServerName");
             this.comboBoxServerName.FormattingEnabled = true;
-            this.comboBoxServerName.Location = new System.Drawing.Point(36, 44);
             this.comboBoxServerName.Name = "comboBoxServerName";
-            this.comboBoxServerName.Size = new System.Drawing.Size(208, 24);
-            this.comboBoxServerName.TabIndex = 0;
             // 
             // buttonConnect
             // 
-            this.buttonConnect.Location = new System.Drawing.Point(82, 112);
+            resources.ApplyResources(this.buttonConnect, "buttonConnect");
             this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(121, 35);
-            this.buttonConnect.TabIndex = 1;
-            this.buttonConnect.Text = "OK";
             this.buttonConnect.UseVisualStyleBackColor = true;
             this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
             // 
+            // labelServer
+            // 
+            resources.ApplyResources(this.labelServer, "labelServer");
+            this.labelServer.Name = "labelServer";
+            // 
             // FormServer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 182);
+            this.Controls.Add(this.labelServer);
             this.Controls.Add(this.buttonConnect);
             this.Controls.Add(this.comboBoxServerName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormServer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormServer";
             this.Load += new System.EventHandler(this.FormServer_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +71,6 @@
 
         private System.Windows.Forms.ComboBox comboBoxServerName;
         private System.Windows.Forms.Button buttonConnect;
+        private System.Windows.Forms.Label labelServer;
     }
 }

@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.Sql;
 using System.Drawing;
 using System.Linq;
+using System.ServiceProcess;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -19,10 +20,16 @@ namespace ANH_Bank
         public FormServer()
         {
             InitializeComponent();
+            this.labelServer.Font = ANHColorsFonts.Font_default;
         }
 
         private void FormServer_Load(object sender, EventArgs e)
         {
+            ServiceController service = new ServiceController("SQLBrowser");
+
+            if ((service.Status.Equals(ServiceControllerStatus.Stopped)) || (service.Status.Equals(ServiceControllerStatus.StopPending)))
+                service.Start();
+
             string myServer = Environment.MachineName;
 
             DataTable servers = SqlDataSourceEnumerator.Instance.GetDataSources();
