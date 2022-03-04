@@ -1,5 +1,7 @@
 ﻿using ANH_Bank.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -52,6 +54,23 @@ namespace ANH_Bank
             user.SecurityQuestionAnswer = textBoxSecA.Text;
             user.InUse = true;
 
+        }
+
+        private void FormSignUp_Load(object sender, EventArgs e)
+        {
+            Context context = new Context();
+
+            List<SecurityQuestion> list = context.SecurityQuestions.ToList();
+            string lang = Thread.CurrentThread.CurrentUICulture.Name;
+
+            foreach (SecurityQuestion sq in list)
+            {
+                comboBoxSecQ.Items.Add(sq);
+
+                //SecurityQuestionTranslation defsqt = sq.SecurityQuestionTranslations.Where(t=> t.IsDefault == true).First();
+                //comboBoxSecQ.DisplayMember = sq.SecurityQuestionTranslations.Where(t => t.Language == lang).DefaultIfEmpty(defsqt).First().Translation.ToString();
+                comboBoxSecQ.DisplayMember = sq.SecurityQuestionTranslations.Where(t => t.Language == lang).First().Translation;
+            }
         }
     }
 }
