@@ -12,6 +12,6 @@ namespace ANH_Bank.Models
         public bool IsDefault { get; set; }
         [Required]
         public string Translation { get; set; }
-        public SecurityQuestion SecurityQuestion { get; set; }
+        public virtual SecurityQuestion SecurityQuestion { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace ANH_Bank.Models
         public int Id { get; set; }
         [Required]
         public string Question { get; set; }
-        public List<SecurityQuestionTranslation> SecurityQuestionTranslations { get; set; }
+        public virtual List<SecurityQuestionTranslation> SecurityQuestionTranslations { get; set; }
     }
 }

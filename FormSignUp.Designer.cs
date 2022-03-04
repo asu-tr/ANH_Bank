@@ -157,8 +157,8 @@ namespace ANH_Bank
             // 
             // comboBoxSecQ
             // 
-            this.comboBoxSecQ.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxSecQ, "comboBoxSecQ");
+            this.comboBoxSecQ.FormattingEnabled = true;
             this.comboBoxSecQ.Name = "comboBoxSecQ";
             // 
             // textBoxSecA
@@ -204,6 +204,7 @@ namespace ANH_Bank
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormSignUp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormSignUp_FormClosed);
+            this.Load += new System.EventHandler(this.FormSignUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
