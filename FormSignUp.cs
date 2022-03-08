@@ -16,31 +16,16 @@ namespace ANH_Bank
 
         #region Events
 
-        private void FormSignUp_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        #endregion
-
-
-        #region Methods
-
-        private void RefreshForm()
-        {
-            InitializeComponent();
-            MyInitializeComponent();
-        }
-
-        #endregion
-
         private void buttonSignUp_Click(object sender, System.EventArgs e)
         {
+            Context context = new Context();
+
             User user = new User();
             user.TCKN = textBoxID.Text;
 
             Random rnd = new Random();
-            user.Password = rnd.Next(100000, 999999).ToString();
+            string pwd = rnd.Next(100000, 999999).ToString();
+            user.Password = Security.Encryption.Encrypt(pwd, user.TCKN);
             //msgbx show
 
             user.FirstName = textBoxFN.Text;
@@ -50,27 +35,56 @@ namespace ANH_Bank
             user.Address = textBoxAddress.Text;
             user.Phone = textBoxPhone.Text;
             user.Email = textBoxEmail.Text;
-            user.SecurityQuestion = (SecurityQuestion)comboBoxSecQ.SelectedItem;
+
+            int sqId = (int)comboBoxSecQ.SelectedValue;
+            user.SecurityQuestion = context.SecurityQuestions.ToList().Where(sq => sq.Id == sqId).First();
             user.SecurityQuestionAnswer = textBoxSecA.Text;
             user.InUse = true;
+        }
 
+        private void FormSignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void FormSignUp_Load(object sender, EventArgs e)
         {
-            Context context = new Context();
-
-            List<SecurityQuestion> list = context.SecurityQuestions.ToList();
             string lang = Thread.CurrentThread.CurrentUICulture.Name;
-
-            foreach (SecurityQuestion sq in list)
-            {
-                comboBoxSecQ.Items.Add(sq);
-
-                //SecurityQuestionTranslation defsqt = sq.SecurityQuestionTranslations.Where(t=> t.IsDefault == true).First();
-                //comboBoxSecQ.DisplayMember = sq.SecurityQuestionTranslations.Where(t => t.Language == lang).DefaultIfEmpty(defsqt).First().Translation.ToString();
-                comboBoxSecQ.DisplayMember = sq.SecurityQuestionTranslations.Where(t => t.Language == lang).First().Translation;
-            }
+            FillComboBoxSQ(lang);
         }
+
+        #endregion
+
+
+        #region Methods
+
+        private void FillComboBoxSQ(string language)
+        {
+            Context context = new Context();
+            List<SecurityQuestion> securityQuestions = context.SecurityQuestions.ToList();
+
+            Dictionary<int, string> sqs = new Dictionary<int, string>();
+
+            foreach (SecurityQuestion sq in securityQuestions)
+            {
+                sqs.Add(sq.Id, sq.SecurityQuestionTranslations.Where(t => t.Language == language).First().Translation);
+            }
+
+            comboBoxSecQ.ValueMember = "Key";
+            comboBoxSecQ.DisplayMember = "Value";
+            comboBoxSecQ.DataSource = new BindingSource(sqs, null);
+        }
+
+        private void RefreshForm()
+        {
+            InitializeComponent();
+            MyInitializeComponent();
+        }
+
+        #endregion
+
+        
+
+        
     }
 }

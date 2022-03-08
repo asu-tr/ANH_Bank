@@ -215,13 +215,13 @@
     <value>31, 535</value>
   </data>
   <data name="textBoxSecA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 537</value>
+    <value>277, 537</value>
   </data>
   <data name="buttonSignUp.Text" xml:space="preserve">
     <value>CREATE</value>
   </data>
   <data name="labelSecA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 505</value>
+    <value>274, 505</value>
   </data>
   <data name="labelSecA.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 16</value>
