@@ -15,6 +15,8 @@ namespace ANH_Bank.Models
         public DbSet<DebitCard> DebitCards { get; set; }
         public DbSet<DW> DWs { get; set; }
         public DbSet<Exchange> Exchanges { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<MessageTranslation> MessageTranslations { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<PaymentType> PaymentTypes { get; set; }
         public DbSet<SecurityQuestion> SecurityQuestions { get; set; }
