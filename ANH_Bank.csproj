@@ -187,6 +187,8 @@
     <Compile Include="Models\DW.cs" />
     <Compile Include="Models\Exchange.cs" />
     <Compile Include="Models\Key.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\MessageTranslation.cs" />
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\PaymentType.cs" />
     <Compile Include="Models\SecurityQuestion.cs" />
