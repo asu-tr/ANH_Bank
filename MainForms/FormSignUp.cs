@@ -26,7 +26,6 @@ namespace ANH_Bank
             Random rnd = new Random();
             string pwd = rnd.Next(100000, 999999).ToString();
             user.Password = Security.Encryption.Encrypt(pwd, user.TCKN);
-            //msgbx show
 
             user.FirstName = textBoxFN.Text;
             user.LastName = textBoxFN.Text;
@@ -40,6 +39,29 @@ namespace ANH_Bank
             user.SecurityQuestion = context.SecurityQuestions.ToList().Where(sq => sq.Id == sqId).First();
             user.SecurityQuestionAnswer = textBoxSecA.Text;
             user.InUse = true;
+
+            context.Users.Add(user);
+
+            if (context.Users.Contains(user))
+            {
+                Account a = Helper.CreateAccount(user, 1);
+                context.SaveChanges();
+
+                if (context.Accounts.Contains(a))
+                {
+                    string lang = Thread.CurrentThread.CurrentUICulture.Name;
+                    //DialogResult dr = MessageBox.Show(Helper.GetMessage("user_create_success", lang) + Helper.GetMessage("first_password", lang), Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
+                    DialogResult dr = MessageBox.Show("Account created succesfully. " + "Your password is: " + pwd.ToString(), Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
+
+                    if (dr == DialogResult.OK)
+                    {
+                        FormSignIn formSignIn = new FormSignIn();
+                        formSignIn.Show();
+                        this.Hide();
+                    }
+                }
+            }
+            
         }
 
         private void FormSignUp_FormClosed(object sender, FormClosedEventArgs e)
