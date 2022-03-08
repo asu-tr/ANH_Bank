@@ -148,34 +148,34 @@
     <Compile Include="Currency\Currency.cs" />
     <Compile Include="Currency\CurrencyType.cs" />
     <Compile Include="Currency\RequestHelper.cs" />
-    <Compile Include="FormMain.cs">
+    <Compile Include="MainForms\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="MainForms\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormServer.cs">
+    <Compile Include="MainForms\FormServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormServer.Designer.cs">
+    <Compile Include="MainForms\FormServer.Designer.cs">
       <DependentUpon>FormServer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSignIn.cs">
+    <Compile Include="MainForms\FormSignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSignIn.Designer.cs">
+    <Compile Include="MainForms\FormSignIn.Designer.cs">
       <DependentUpon>FormSignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSignUp.cs">
+    <Compile Include="MainForms\FormSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSignUp.Designer.cs">
+    <Compile Include="MainForms\FormSignUp.Designer.cs">
       <DependentUpon>FormSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStart.cs">
+    <Compile Include="MainForms\FormStart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStart.Designer.cs">
+    <Compile Include="MainForms\FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
@@ -245,55 +245,55 @@
     <EmbeddedResource Include="ChildForms\FormChildWithdraw.resx">
       <DependentUpon>FormChildWithdraw.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.en.resx">
+    <EmbeddedResource Include="MainForms\FormMain.en.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.tr.resx">
+    <EmbeddedResource Include="MainForms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormServer.en.resx">
+    <EmbeddedResource Include="MainForms\FormMain.tr.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormServer.en.resx">
       <DependentUpon>FormServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormServer.resx">
+    <EmbeddedResource Include="MainForms\FormServer.resx">
       <DependentUpon>FormServer.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormServer.tr.resx">
+    <EmbeddedResource Include="MainForms\FormServer.tr.resx">
       <DependentUpon>FormServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignIn.en.resx">
+    <EmbeddedResource Include="MainForms\FormSignIn.en.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignIn.resx">
+    <EmbeddedResource Include="MainForms\FormSignIn.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignIn.tr.resx">
+    <EmbeddedResource Include="MainForms\FormSignIn.tr.resx">
       <DependentUpon>FormSignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignUp.en.resx">
+    <EmbeddedResource Include="MainForms\FormSignUp.en.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignUp.resx">
+    <EmbeddedResource Include="MainForms\FormSignUp.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignUp.tr.resx">
+    <EmbeddedResource Include="MainForms\FormSignUp.tr.resx">
       <DependentUpon>FormSignUp.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStart.en.resx">
+    <EmbeddedResource Include="MainForms\FormStart.en.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStart.resx">
+    <EmbeddedResource Include="MainForms\FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStart.tr.resx">
+    <EmbeddedResource Include="MainForms\FormStart.tr.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
