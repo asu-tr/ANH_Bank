@@ -7,6 +7,8 @@ namespace ANH_Bank
 {
     public class Helper
     {
+        #region Database - Connection
+
         public static void CreateDatabase(Context context)
         {
             if (context.Database.Exists())
@@ -43,6 +45,12 @@ namespace ANH_Bank
             context.SecurityQuestionTranslations.Add(sqt);
             sqt = new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = sq, IsDefault = false, Translation = "En sevdiğiniz arkadaşınızın adı?" };
             context.SecurityQuestionTranslations.Add(sqt);
+
+            // ADD MESSAGE / TRANSLATIONS
+
+            //user_create_success
+            //user_create_success_title
+            // first_password
 
             context.SaveChanges();
         }
@@ -81,6 +89,65 @@ namespace ANH_Bank
             config.ConnectionStrings.ConnectionStrings[key].ProviderName = "System.Data.SqlClient";
             config.Save(ConfigurationSaveMode.Modified);
         }
-        
+
+        #endregion
+
+        #region Banking Stuff
+
+        public static Account CreateAccount(User user, int currencyId)
+        {
+            Context context = new Context();
+
+            Account acc = new Account();
+
+            acc.Currency = context.Currencies.Where(c => c.Id == currencyId).First();
+            acc.Balance = 0;
+            acc.Overdraft = 0;
+            acc.InUse = true;
+            acc.User = user;
+
+            context.Accounts.Add(acc);
+
+            return acc;
+        }
+
+        public static Account CreateAccount(User user, int currencyId, string accountName)
+        {
+            Context context = new Context();
+
+            Account acc = new Account();
+
+            acc.Name = accountName;
+            acc.Currency = context.Currencies.Where(c => c.Id == currencyId).First();
+            acc.Balance = 0;
+            acc.Overdraft = 0;
+            acc.InUse = true;
+            acc.User = user;
+
+            context.Accounts.Add(acc);
+
+            return (acc);
+        }
+
+        #endregion
+
+        #region Language
+
+        public static string GetMessage(string messageName, string lang)
+        {
+            Context context = new Context();
+
+            Message msg = context.Messages.Where(m => m.Name == messageName).First();
+            string translated = context.MessageTranslations.Where(t => t.Message == msg && t.Language == lang).First().Translation;
+
+            if (translated == null)
+            {
+                translated = context.MessageTranslations.Where(t => t.Message == msg && t.IsDefault == true).First().Translation;
+            }
+
+            return translated;
+        }
+
+        #endregion
     }
 }
