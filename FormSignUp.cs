@@ -82,9 +82,5 @@ namespace ANH_Bank
         }
 
         #endregion
-
-        
-
-        
     }
 }
