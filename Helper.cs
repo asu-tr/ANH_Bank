@@ -1,12 +1,115 @@
 ﻿using ANH_Bank.Models;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 
 namespace ANH_Bank
 {
     public class Helper
     {
+        #region Database - Default Values
+
+        #region Get Values
+
+        public static string GetDefaultsPath(string objType)
+        {
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            if (!Directory.Exists(Path.Combine(path, "ANH Bank")))
+            {
+                CreateANHDirectory();
+                path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                path = Path.Combine(path, "ANH Bank");
+                path = Path.Combine(path, "Defaults");
+                CreateJSONs(path);
+            }
+
+            path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            path = Path.Combine(path, "ANH Bank");
+            path = Path.Combine(path, "Defaults");
+
+            string js = File.ReadAllText(path + "\\" + objType + ".json");
+            return js;
+        }
+
+        public static List<Models.Currency> GetCurrencies()
+        {
+            string path = GetDefaultsPath("Currencies");
+            List<Models.Currency> list = JsonConvert.DeserializeObject<List<Models.Currency>>(path + "\\Currencies.json");
+
+            return list;
+        }
+
+        #endregion
+
+        #region Set Values
+
+        #region Lists
+
+        public static List<Models.Currency> defCurrencies = new List<Models.Currency>()
+        {
+            new Models.Currency(){Id = 1, Name = "TRY"},
+            new Models.Currency(){Id = 2, Name = "USD"},
+            new Models.Currency(){Id = 3, Name = "EUR"},
+            new Models.Currency(){Id = 4, Name = "GBP"},
+        };
+
+        // OTHER LISTS
+
+        #endregion
+
+        #region Create Directories
+
+        private static void CreateANHDirectory()
+        {
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            Directory.CreateDirectory(Path.Combine(path, "ANH Bank"));
+
+            path = Path.Combine(path, "ANH Bank");
+            Directory.CreateDirectory(Path.Combine(path, "Defaults"));
+        }
+
+        #endregion
+
+        #region Create JSON
+
+        public static void CreateJSONs(string path)
+        {
+            CreateJSONCurrencies(path);
+            // other classess
+        }
+
+        public static void CreateJSONCurrencies(string path)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defCurrencies);
+            File.WriteAllText(path + "\\Currencies.json", json);
+        }
+
+        // CREATE OTHERS defcurr
+
+        #endregion
+
+        #endregion
+
+        public static void AddCurrencies(Context ctx)
+        {
+            List<Models.Currency> list = GetCurrencies();
+
+            foreach (Models.Currency cur in list)
+            {
+                ctx.Currencies.Add(cur);
+            }
+        }
+
+        // add others to ctx
+
+        #endregion
+
+
         #region Database - Connection
 
         public static void CreateDatabase(Context context)
@@ -16,10 +119,7 @@ namespace ANH_Bank
 
             context.Database.Create();
 
-            context.Currencies.Add(new Models.Currency { Name = "TRY" });
-            context.Currencies.Add(new Models.Currency { Name = "USD" });
-            context.Currencies.Add(new Models.Currency { Name = "EUR" });
-            context.Currencies.Add(new Models.Currency { Name = "GBP" });
+            AddCurrencies(context);
 
             context.PaymentTypes.Add(new Models.PaymentType { Description = "Card Purchases" });
             context.PaymentTypes.Add(new Models.PaymentType { Description = "Taxes" });
