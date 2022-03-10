@@ -15,7 +15,7 @@ namespace ANH_Bank
 
         #region Get Values
 
-        public static string GetDefaultsPath(string objType)
+        public static string GetDefaultsJson(string objType)
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
@@ -32,14 +32,14 @@ namespace ANH_Bank
             path = Path.Combine(path, "ANH Bank");
             path = Path.Combine(path, "Defaults");
 
-            string js = File.ReadAllText(path + "\\" + objType + ".json");
-            return js;
+            path = string.Concat(path, "\\", objType, ".json");
+            return path;
         }
 
         public static List<Models.Currency> GetCurrencies()
         {
-            string path = GetDefaultsPath("Currencies");
-            List<Models.Currency> list = JsonConvert.DeserializeObject<List<Models.Currency>>(path + "\\Currencies.json");
+            string json = File.ReadAllText(GetDefaultsJson("Currencies"));
+            List<Models.Currency> list = JsonConvert.DeserializeObject<List<Models.Currency>>(json);
 
             return list;
         }
