@@ -15,7 +15,7 @@ namespace ANH_Bank
 
         #region Get Values
 
-        public static string GetDefaultsJson(string objType)
+        private static string GetDefaultsJson(string objType)
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
@@ -36,19 +36,48 @@ namespace ANH_Bank
             return path;
         }
 
-        public static List<Models.Currency> GetCurrencies()
+        private static List<Models.Currency> GetCurrencies()
         {
             string json = File.ReadAllText(GetDefaultsJson("Currencies"));
             List<Models.Currency> list = JsonConvert.DeserializeObject<List<Models.Currency>>(json);
 
             return list;
         }
+        private static List<PaymentType> GetPaymentTypes()
+        {
+            string json = File.ReadAllText(GetDefaultsJson("PaymentTypes"));
+            List<PaymentType> list = JsonConvert.DeserializeObject<List<PaymentType>>(json);
 
-        // payment types
-        // sec questions
-        // sq translations
-        // messages
-        // translations
+            return list;
+        }
+        private static List<SecurityQuestion> GetSecurityQuestions()
+        {
+            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            List<SecurityQuestion> list = JsonConvert.DeserializeObject<List<SecurityQuestion>>(json);
+
+            return list;
+        }
+        private static List<SecurityQuestionTranslation> GetSecurityQuestionTranslations()
+        {
+            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            List<SecurityQuestionTranslation> list = JsonConvert.DeserializeObject<List<SecurityQuestionTranslation>>(json);
+
+            return list;
+        }
+        private static List<Message> GetMessages()
+        {
+            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            List<Message> list = JsonConvert.DeserializeObject<List<Message>>(json);
+
+            return list;
+        }
+        private static List<MessageTranslation> GetMessageTranslations()
+        {
+            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            List<MessageTranslation> list = JsonConvert.DeserializeObject<List<MessageTranslation>>(json);
+
+            return list;
+        }
 
         #endregion
 
@@ -56,19 +85,58 @@ namespace ANH_Bank
 
         #region Lists
 
-        public static List<Models.Currency> defCurrencies = new List<Models.Currency>()
+        private static List<Models.Currency> defCurrencies = new List<Models.Currency>()
         {
             new Models.Currency(){Id = 1, Name = "TRY"},
             new Models.Currency(){Id = 2, Name = "USD"},
             new Models.Currency(){Id = 3, Name = "EUR"},
-            new Models.Currency(){Id = 4, Name = "GBP"},
+            new Models.Currency(){Id = 4, Name = "GBP"}
         };
 
-        // payment types
-        // sec questions
-        // sq translations
-        // messages
-        // translations
+        private static List<PaymentType> defPaymentTypes = new List<PaymentType>()
+        {
+            new PaymentType(){Id = 1, Description = "Card Purchases"},
+            new PaymentType(){Id = 1, Description = "Taxes"},
+            new PaymentType(){Id = 1, Description = "Bills"}
+        };
+
+        private static List<SecurityQuestion> defSecurityQuestions = new List<SecurityQuestion>()
+        {
+            new SecurityQuestion {Id = 1, Question = "fav_color"},
+            new SecurityQuestion {Id = 2, Question = "pet_name"},
+            new SecurityQuestion {Id = 3, Question = "bff_name"}
+        };
+
+        private static List<SecurityQuestionTranslation> defSQTs = new List<SecurityQuestionTranslation>()
+        {
+            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion{Id = 1, Question = "fav_color"}, IsDefault = true, Translation = "What is your favourite color?" },
+            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion{Id = 1, Question = "fav_color"}, IsDefault = false, Translation = "En sevdiğiniz renk?" },
+
+            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion{Id = 2, Question = "pet_name"}, IsDefault = true, Translation = "What is your pet's name?" },
+            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion{Id = 2, Question = "pet_name"}, IsDefault = false, Translation = "Evcil hayvanınızın adı?" },
+
+            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion{Id = 3, Question = "bff_name"}, IsDefault = true, Translation = "What is your BFF's name?" },
+            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion{Id = 3, Question = "bff_name"}, IsDefault = false, Translation = "En sevdiğiniz arkadaşınızın adı?" }
+        };
+
+        private static List<Message> defMessages = new List<Message>()
+        {
+            new Message { Id = 1, Name = "user_create_success"},
+            new Message { Id = 2, Name = "user_create_success_title"},
+            new Message { Id = 3, Name = "first_password"}
+        };
+
+        private static List<MessageTranslation> defMessageTranslations = new List<MessageTranslation>()
+        {
+            new MessageTranslation { Language = "en", Message = new Message{Id = 1, Name = "user_create_success"}, IsDefault = true, Translation = "User created successfully!"},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 1, Name = "user_create_success"}, IsDefault = false, Translation = "Kullanıcı başarıyla oluşturuldu!"},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 2, Name = "user_create_success_title"}, IsDefault = true, Translation = "SUCCESS!"},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 2, Name = "user_create_success_title"}, IsDefault = false, Translation = "BAŞARI!"},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 3, Name = "first_password"}, IsDefault = true, Translation = "Your password is: "},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 3, Name = "first_password"}, IsDefault = false, Translation = "Şifreniz: "}
+        };
 
         #endregion
 
@@ -87,27 +155,51 @@ namespace ANH_Bank
 
         #region Create JSON
 
-        public static void CreateJSONs(string path)
+        private static void CreateJSONs(string path)
         {
             CreateJSONCurrencies(path);
-            // payment types
-            // sec questions
-            // sq translations
-            // messages
-            // translations
+            CreateJSONPaymentTypes(path);
+            CreateJSONSecurityQuestions(path);
+            CreateJSONSecurityQuestionTranslations(path);
+            CreateJSONMessages(path);
+            CreateJSONMessageTranslations(path);
         }
 
-        public static void CreateJSONCurrencies(string path)
+        private static void CreateJSONCurrencies(string path)
         {
             string json = Newtonsoft.Json.JsonConvert.SerializeObject(defCurrencies);
             File.WriteAllText(path + "\\Currencies.json", json);
         }
 
-        // payment types
-        // sec questions
-        // sq translations
-        // messages
-        // translations
+        private static void CreateJSONPaymentTypes(string path)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defPaymentTypes);
+            File.WriteAllText(path + "\\PaymentTypes.json", json);
+        }
+
+        private static void CreateJSONSecurityQuestions(string path)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defSecurityQuestions);
+            File.WriteAllText(path + "\\SecurityQuestions.json", json);
+        }
+
+        private static void CreateJSONSecurityQuestionTranslations(string path)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defSQTs);
+            File.WriteAllText(path + "\\SecurityQuestionTranslations.json", json);
+        }
+
+        private static void CreateJSONMessages(string path)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defMessages);
+            File.WriteAllText(path + "\\Messages.json", json);
+        }
+
+        private static void CreateJSONMessageTranslations(string path)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defMessages);
+            File.WriteAllText(path + "\\MessageTranslations.json", json);
+        }
 
         #endregion
 
@@ -118,28 +210,61 @@ namespace ANH_Bank
         private static void FillAllTables(Context ctx)
         {
             AddCurrencies(ctx);
-            // payment types
-            // sec questions
-            // sq translations
-            // messages
-            // translations
+            AddPaymentTypes(ctx);
+            AddSecurityQuestions(ctx);
+            AddSecurityQuestionTranslations(ctx);
+            AddMessages(ctx);
+            AddMessageTranslations(ctx);
         }
 
-        public static void AddCurrencies(Context ctx)
+        private static void AddCurrencies(Context ctx)
         {
             List<Models.Currency> list = GetCurrencies();
-
             foreach (Models.Currency cur in list)
             {
                 ctx.Currencies.Add(cur);
             }
         }
-
-        // payment types
-        // sec questions
-        // sq translations
-        // messages
-        // translations
+        private static void AddPaymentTypes(Context ctx)
+        {
+            List<PaymentType> list = GetPaymentTypes();
+            foreach (PaymentType pt in list)
+            {
+                ctx.PaymentTypes.Add(pt);
+            }
+        }
+        private static void AddSecurityQuestions(Context ctx)
+        {
+            List<SecurityQuestion> list = GetSecurityQuestions();
+            foreach (SecurityQuestion sq in list)
+            {
+                ctx.SecurityQuestions.Add(sq);
+            }
+        }
+        private static void AddSecurityQuestionTranslations(Context ctx)
+        {
+            List<SecurityQuestionTranslation> list = GetSecurityQuestionTranslations();
+            foreach (SecurityQuestionTranslation sqt in list)
+            {
+                ctx.SecurityQuestionTranslations.Add(sqt);
+            }
+        }
+        private static void AddMessages(Context ctx)
+        {
+            List<Message> list = GetMessages();
+            foreach (Message m in list)
+            {
+                ctx.Messages.Add(m);
+            }
+        }
+        private static void AddMessageTranslations(Context ctx)
+        {
+            List<MessageTranslation> list = GetMessageTranslations();
+            foreach (MessageTranslation mt in list)
+            {
+                ctx.MessageTranslations.Add(mt);
+            }
+        }
 
         #endregion
 
@@ -156,38 +281,29 @@ namespace ANH_Bank
 
             FillAllTables(context);
 
-            context.PaymentTypes.Add(new Models.PaymentType { Description = "Card Purchases" });
-            context.PaymentTypes.Add(new Models.PaymentType { Description = "Taxes" });
-            context.PaymentTypes.Add(new Models.PaymentType { Description = "Bills" });
+            //context.SaveChanges();
 
-            SecurityQuestion sq = new SecurityQuestion { Question = "fav_color" };
-            context.SecurityQuestions.Add(sq);
-            SecurityQuestionTranslation sqt = new SecurityQuestionTranslation { Language = "en", SecurityQuestion = sq, IsDefault = true, Translation = "What is your favourite color?" };
-            context.SecurityQuestionTranslations.Add(sqt);
-            sqt = new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = sq, IsDefault = false, Translation = "En sevdiğiniz renk?" };
-            context.SecurityQuestionTranslations.Add(sqt);
-
-            sq = new SecurityQuestion { Question = "pet_name" };
-            context.SecurityQuestions.Add(sq);
-            sqt = new SecurityQuestionTranslation { Language = "en", SecurityQuestion = sq, IsDefault = true, Translation = "What is your pet's name?" };
-            context.SecurityQuestionTranslations.Add(sqt);
-            sqt = new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = sq, IsDefault = false, Translation = "Evcil hayvanınızın adı?" };
-            context.SecurityQuestionTranslations.Add(sqt);
-
-            sq = new SecurityQuestion { Question = "bff_name" };
-            context.SecurityQuestions.Add(sq);
-            sqt = new SecurityQuestionTranslation { Language = "en", SecurityQuestion = sq, IsDefault = true, Translation = "What is your BFF's name?" };
-            context.SecurityQuestionTranslations.Add(sqt);
-            sqt = new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = sq, IsDefault = false, Translation = "En sevdiğiniz arkadaşınızın adı?" };
-            context.SecurityQuestionTranslations.Add(sqt);
-
-            // ADD MESSAGE / TRANSLATIONS
-
-            //user_create_success
-            //user_create_success_title
-            // first_password
-
-            context.SaveChanges();
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
+            {
+                Exception raise = dbEx;
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        string message = string.Format("{0}:{1}",
+                            validationErrors.Entry.Entity.ToString(),
+                            validationError.ErrorMessage);
+                        // raise a new exception nesting
+                        // the current instance as InnerException
+                        raise = new InvalidOperationException(message, raise);
+                    }
+                }
+                throw raise;
+            }
         }
 
         Configuration config;
