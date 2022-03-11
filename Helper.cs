@@ -44,6 +44,12 @@ namespace ANH_Bank
             return list;
         }
 
+        // payment types
+        // sec questions
+        // sq translations
+        // messages
+        // translations
+
         #endregion
 
         #region Set Values
@@ -58,11 +64,15 @@ namespace ANH_Bank
             new Models.Currency(){Id = 4, Name = "GBP"},
         };
 
-        // OTHER LISTS
+        // payment types
+        // sec questions
+        // sq translations
+        // messages
+        // translations
 
         #endregion
 
-        #region Create Directories
+        #region Create Directory
 
         private static void CreateANHDirectory()
         {
@@ -80,7 +90,11 @@ namespace ANH_Bank
         public static void CreateJSONs(string path)
         {
             CreateJSONCurrencies(path);
-            // other classess
+            // payment types
+            // sec questions
+            // sq translations
+            // messages
+            // translations
         }
 
         public static void CreateJSONCurrencies(string path)
@@ -89,11 +103,27 @@ namespace ANH_Bank
             File.WriteAllText(path + "\\Currencies.json", json);
         }
 
-        // CREATE OTHERS defcurr
+        // payment types
+        // sec questions
+        // sq translations
+        // messages
+        // translations
 
         #endregion
 
         #endregion
+
+        #region Fill Tables (Methods)
+
+        private static void FillAllTables(Context ctx)
+        {
+            AddCurrencies(ctx);
+            // payment types
+            // sec questions
+            // sq translations
+            // messages
+            // translations
+        }
 
         public static void AddCurrencies(Context ctx)
         {
@@ -105,10 +135,15 @@ namespace ANH_Bank
             }
         }
 
-        // add others to ctx
+        // payment types
+        // sec questions
+        // sq translations
+        // messages
+        // translations
 
         #endregion
 
+        #endregion
 
         #region Database - Connection
 
@@ -119,7 +154,7 @@ namespace ANH_Bank
 
             context.Database.Create();
 
-            AddCurrencies(context);
+            FillAllTables(context);
 
             context.PaymentTypes.Add(new Models.PaymentType { Description = "Card Purchases" });
             context.PaymentTypes.Add(new Models.PaymentType { Description = "Taxes" });
