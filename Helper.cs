@@ -248,18 +248,6 @@ namespace ANH_Bank
                     }
                 }
             }
-
-
-            //foreach (SecurityQuestionTranslation sqt in list)
-            //{
-            //    if (ctx.SecurityQuestions.Find(sqt.SecurityQuestion.Id) != null)
-            //    {
-            //        sqt.SecurityQuestion = ctx.SecurityQuestions.First(q => q.Id == sqt.SecurityQuestion.Id);
-            //        ctx.SecurityQuestionTranslations.Add(sqt);
-            //    }
-            //    else
-            //        ctx.SecurityQuestionTranslations.Add(sqt);
-            //}
         }
         private static void AddMessagesAndTranslations(Context ctx)
         {
