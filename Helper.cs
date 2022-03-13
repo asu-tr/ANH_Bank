@@ -59,21 +59,21 @@ namespace ANH_Bank
         }
         private static List<SecurityQuestionTranslation> GetSecurityQuestionTranslations()
         {
-            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestionTranslations"));
             List<SecurityQuestionTranslation> list = JsonConvert.DeserializeObject<List<SecurityQuestionTranslation>>(json);
 
             return list;
         }
         private static List<Message> GetMessages()
         {
-            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            string json = File.ReadAllText(GetDefaultsJson("Messages"));
             List<Message> list = JsonConvert.DeserializeObject<List<Message>>(json);
 
             return list;
         }
         private static List<MessageTranslation> GetMessageTranslations()
         {
-            string json = File.ReadAllText(GetDefaultsJson("SecurityQuestions"));
+            string json = File.ReadAllText(GetDefaultsJson("MessageTranslations"));
             List<MessageTranslation> list = JsonConvert.DeserializeObject<List<MessageTranslation>>(json);
 
             return list;
@@ -109,14 +109,14 @@ namespace ANH_Bank
 
         private static List<SecurityQuestionTranslation> defSQTs = new List<SecurityQuestionTranslation>()
         {
-            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion{Id = 1, Question = "fav_color"}, IsDefault = true, Translation = "What is your favourite color?" },
-            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion{Id = 1, Question = "fav_color"}, IsDefault = false, Translation = "En sevdiğiniz renk?" },
+            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion { Id = 1, Question = "fav_color"}, IsDefault = true, Translation = "What is your favourite color?" },
+            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion { Id = 1, Question = "fav_color"}, IsDefault = false, Translation = "En sevdiğiniz renk?" },
 
-            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion{Id = 2, Question = "pet_name"}, IsDefault = true, Translation = "What is your pet's name?" },
-            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion{Id = 2, Question = "pet_name"}, IsDefault = false, Translation = "Evcil hayvanınızın adı?" },
+            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion { Id = 2, Question = "pet_name"}, IsDefault = true, Translation = "What is your pet's name?" },
+            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion { Id = 2, Question = "pet_name"}, IsDefault = false, Translation = "Evcil hayvanınızın adı?" },
 
-            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion{Id = 3, Question = "bff_name"}, IsDefault = true, Translation = "What is your BFF's name?" },
-            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion{Id = 3, Question = "bff_name"}, IsDefault = false, Translation = "En sevdiğiniz arkadaşınızın adı?" }
+            new SecurityQuestionTranslation { Language = "en", SecurityQuestion = new SecurityQuestion { Id = 3, Question = "bff_name"}, IsDefault = true, Translation = "What is your BFF's name?" },
+            new SecurityQuestionTranslation { Language = "tr", SecurityQuestion = new SecurityQuestion { Id = 3, Question = "bff_name"}, IsDefault = false, Translation = "En sevdiğiniz arkadaşınızın adı?" }
         };
 
         private static List<Message> defMessages = new List<Message>()
@@ -197,7 +197,7 @@ namespace ANH_Bank
 
         private static void CreateJSONMessageTranslations(string path)
         {
-            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defMessages);
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(defMessageTranslations);
             File.WriteAllText(path + "\\MessageTranslations.json", json);
         }
 
@@ -211,10 +211,8 @@ namespace ANH_Bank
         {
             AddCurrencies(ctx);
             AddPaymentTypes(ctx);
-            AddSecurityQuestions(ctx);
-            AddSecurityQuestionTranslations(ctx);
-            AddMessages(ctx);
-            AddMessageTranslations(ctx);
+            AddSecurityQuestionsAndTranslations(ctx);
+            AddMessagesAndTranslations(ctx);
         }
 
         private static void AddCurrencies(Context ctx)
@@ -233,36 +231,52 @@ namespace ANH_Bank
                 ctx.PaymentTypes.Add(pt);
             }
         }
-        private static void AddSecurityQuestions(Context ctx)
+        private static void AddSecurityQuestionsAndTranslations(Context ctx)
         {
-            List<SecurityQuestion> list = GetSecurityQuestions();
-            foreach (SecurityQuestion sq in list)
+            List<SecurityQuestionTranslation> listsqt = GetSecurityQuestionTranslations();
+            List<SecurityQuestion> listsq = GetSecurityQuestions();
+
+            foreach (SecurityQuestion sq in listsq)
             {
                 ctx.SecurityQuestions.Add(sq);
+                foreach (SecurityQuestionTranslation sqt in listsqt)
+                {
+                    if (sqt.SecurityQuestion.Id == sq.Id)
+                    {
+                        sqt.SecurityQuestion = sq;
+                        ctx.SecurityQuestionTranslations.Add(sqt);
+                    }
+                }
             }
+
+
+            //foreach (SecurityQuestionTranslation sqt in list)
+            //{
+            //    if (ctx.SecurityQuestions.Find(sqt.SecurityQuestion.Id) != null)
+            //    {
+            //        sqt.SecurityQuestion = ctx.SecurityQuestions.First(q => q.Id == sqt.SecurityQuestion.Id);
+            //        ctx.SecurityQuestionTranslations.Add(sqt);
+            //    }
+            //    else
+            //        ctx.SecurityQuestionTranslations.Add(sqt);
+            //}
         }
-        private static void AddSecurityQuestionTranslations(Context ctx)
+        private static void AddMessagesAndTranslations(Context ctx)
         {
-            List<SecurityQuestionTranslation> list = GetSecurityQuestionTranslations();
-            foreach (SecurityQuestionTranslation sqt in list)
-            {
-                ctx.SecurityQuestionTranslations.Add(sqt);
-            }
-        }
-        private static void AddMessages(Context ctx)
-        {
-            List<Message> list = GetMessages();
-            foreach (Message m in list)
+            List<Message> listmsg = GetMessages();
+            List<MessageTranslation> listmsgt = GetMessageTranslations();
+
+            foreach (Message m in listmsg)
             {
                 ctx.Messages.Add(m);
-            }
-        }
-        private static void AddMessageTranslations(Context ctx)
-        {
-            List<MessageTranslation> list = GetMessageTranslations();
-            foreach (MessageTranslation mt in list)
-            {
-                ctx.MessageTranslations.Add(mt);
+                foreach (MessageTranslation mt in listmsgt)
+                {
+                    if (mt.Message.Id == m.Id)
+                    {
+                        mt.Message = m;
+                        ctx.MessageTranslations.Add(mt);
+                    }
+                }
             }
         }
 
@@ -281,29 +295,7 @@ namespace ANH_Bank
 
             FillAllTables(context);
 
-            //context.SaveChanges();
-
-            try
-            {
-                context.SaveChanges();
-            }
-            catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
-            {
-                Exception raise = dbEx;
-                foreach (var validationErrors in dbEx.EntityValidationErrors)
-                {
-                    foreach (var validationError in validationErrors.ValidationErrors)
-                    {
-                        string message = string.Format("{0}:{1}",
-                            validationErrors.Entry.Entity.ToString(),
-                            validationError.ErrorMessage);
-                        // raise a new exception nesting
-                        // the current instance as InnerException
-                        raise = new InvalidOperationException(message, raise);
-                    }
-                }
-                throw raise;
-            }
+            context.SaveChanges();
         }
 
         Configuration config;
