@@ -6,6 +6,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace ANH_Bank
 {
@@ -125,7 +126,8 @@ namespace ANH_Bank
             new Message { Id = 2, Name = "user_create_success_title"},
             new Message { Id = 3, Name = "first_password"},
             new Message { Id = 4, Name = "login_error"},
-            new Message { Id = 5, Name = "login_error_title"}
+            new Message { Id = 5, Name = "login_error_title"},
+            new Message { Id = 6, Name = "account"}
         };
 
         private static List<MessageTranslation> defMessageTranslations = new List<MessageTranslation>()
@@ -143,7 +145,10 @@ namespace ANH_Bank
             new MessageTranslation { Language = "tr", Message = new Message{Id = 4, Name = "login_error"}, IsDefault = false, Translation = "Geçersiz TCKN veya şifre."},
 
             new MessageTranslation { Language = "en", Message = new Message{Id = 5, Name = "login_error_title"}, IsDefault = true, Translation = "Log In Error"},
-            new MessageTranslation { Language = "tr", Message = new Message{Id = 5, Name = "login_error_title"}, IsDefault = false, Translation = "Oturum Açma Hatası"}
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 5, Name = "login_error_title"}, IsDefault = false, Translation = "Oturum Açma Hatası"},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 6, Name = "account"}, IsDefault = true, Translation = "Account "},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 6, Name = "account"}, IsDefault = false, Translation = "Hesap "}
         };
 
         #endregion
@@ -333,13 +338,13 @@ namespace ANH_Bank
 
         #region Banking Stuff
 
-        public static Account CreateAccount(User user, int currencyId)
+        public static Account CreateAccount(User user, Models.Currency cur)
         {
             Context context = new Context();
 
             Account acc = new Account();
 
-            acc.Currency = context.Currencies.Where(c => c.Id == currencyId).First();
+            acc.Currency = cur;
             acc.Balance = 0;
             acc.Overdraft = 0;
             acc.InUse = true;
@@ -364,6 +369,17 @@ namespace ANH_Bank
             context.Accounts.Add(acc);
 
             return (acc);
+        }
+
+        public static string GetCurrencyAPIKey()
+        {
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string js = File.ReadAllText(path + "\\config.json");
+
+            List<Key> keys = JsonConvert.DeserializeObject<List<Key>>(js);
+            string key = keys[0].KeyValue;
+
+            return key;
         }
 
         #endregion
