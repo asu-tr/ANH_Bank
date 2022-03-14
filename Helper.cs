@@ -337,8 +337,6 @@ namespace ANH_Bank
             acc.InUse = true;
             acc.User = user;
 
-            context.Accounts.Add(acc);
-
             return acc;
         }
 
@@ -369,7 +367,7 @@ namespace ANH_Bank
             Context context = new Context();
 
             Message msg = context.Messages.Where(m => m.Name == messageName).First();
-            string translated = context.MessageTranslations.Where(t => t.Message == msg && t.Language == lang).First().Translation;
+            string translated = context.MessageTranslations.ToList().Where(t => t.Message == msg && t.Language == lang).First().Translation;
 
             if (translated == null)
             {

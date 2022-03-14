@@ -41,13 +41,15 @@ namespace ANH_Bank
             user.InUse = true;
 
             context.Users.Add(user);
+            context.SaveChanges();
 
-            if (context.Users.Contains(user))
+            if (context.Users.ToList().Contains(user))
             {
                 Account a = Helper.CreateAccount(user, 1);
+                context.Accounts.Add(a);
                 context.SaveChanges();
 
-                if (context.Accounts.Contains(a))
+                if (context.Accounts.ToList().Contains(a))
                 {
                     string lang = Thread.CurrentThread.CurrentUICulture.Name;
                     //DialogResult dr = MessageBox.Show(Helper.GetMessage("user_create_success", lang) + Helper.GetMessage("first_password", lang), Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
