@@ -45,7 +45,8 @@ namespace ANH_Bank
 
             if (context.Users.ToList().Contains(user))
             {
-                Account a = Helper.CreateAccount(user, 1);
+                Models.Currency c = context.Currencies.Find(1);
+                Account a = Helper.CreateAccount(user, c);
                 context.Accounts.Add(a);
                 context.SaveChanges();
 
