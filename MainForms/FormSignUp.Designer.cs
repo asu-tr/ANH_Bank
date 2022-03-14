@@ -157,8 +157,8 @@ namespace ANH_Bank
             // 
             // comboBoxSecQ
             // 
-            resources.ApplyResources(this.comboBoxSecQ, "comboBoxSecQ");
             this.comboBoxSecQ.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxSecQ, "comboBoxSecQ");
             this.comboBoxSecQ.Name = "comboBoxSecQ";
             // 
             // textBoxSecA
