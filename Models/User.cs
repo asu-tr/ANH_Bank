@@ -34,7 +34,7 @@ namespace ANH_Bank.Models
         public bool InUse { get; set; }
 
 
-        public List<Account> Accounts { get; set; }
+        public virtual List<Account> Accounts { get; set; }
         public List<CreditCard> CreditCards { get; set; }
         public List<DebitCard> DebitCards { get; set; }
     }

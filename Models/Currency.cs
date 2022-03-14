@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ANH_Bank.Models
 {
@@ -9,5 +10,7 @@ namespace ANH_Bank.Models
 
         [Required]
         public string Name { get; set; }
+
+        public virtual List<Account> Accounts { get; set; }
     }
 }

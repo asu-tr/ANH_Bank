@@ -11,7 +11,7 @@ namespace ANH_Bank.Models
         public string Name { get; set; }
         [Required, ForeignKey("Currency")]
         public int CurrencyId { get; set; }
-        public Currency Currency { get; set; }
+        public virtual Currency Currency { get; set; }
         [Required]
         public decimal Balance { get; set; }
         [Required]
@@ -19,7 +19,7 @@ namespace ANH_Bank.Models
         [Required]
         public bool InUse { get; set; }
         [Required]
-        public User User { get; set; }
+        public virtual User User { get; set; }
 
 
         public List<DW> DWs { get; set; }
