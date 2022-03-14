@@ -127,6 +127,9 @@
   <data name="buttonConnect.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 164</value>
   </data>
+  <data name="labelServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 55</value>
+  </data>
   <data name="labelServer.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 16</value>
   </data>

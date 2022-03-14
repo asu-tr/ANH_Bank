@@ -10,8 +10,7 @@ namespace ANH_Bank
     {
         public FormServer()
         {
-            InitializeComponent();
-            this.labelServer.Font = ANHColorsFonts.Font_default;
+            RefreshForm();
         }
 
         private void FormServer_Load(object sender, EventArgs e)
@@ -56,6 +55,11 @@ namespace ANH_Bank
             FormStart formStart = new FormStart();
             formStart.Show();
             this.Hide();
+        }
+        private void RefreshForm()
+        {
+            InitializeComponent();
+            MyInitializeComponent();
         }
     }
 }

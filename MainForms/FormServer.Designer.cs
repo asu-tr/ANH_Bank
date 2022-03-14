@@ -20,6 +20,16 @@
             base.Dispose(disposing);
         }
 
+        private void MyInitializeComponent()
+        {
+            this.labelServer.Font =ANHColorsFonts.Font_header2;
+            this.comboBoxServerName.Font = ANHColorsFonts.Font_default;
+            this.buttonConnect.Font = ANHColorsFonts.Font_header3;
+
+            this.BackColor = ANHColorsFonts.Color_MainBG;
+            this.buttonConnect.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+        }
+
         #region Windows Form Designer generated code
 
         /// <summary>
