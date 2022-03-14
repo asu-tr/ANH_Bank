@@ -123,7 +123,9 @@ namespace ANH_Bank
         {
             new Message { Id = 1, Name = "user_create_success"},
             new Message { Id = 2, Name = "user_create_success_title"},
-            new Message { Id = 3, Name = "first_password"}
+            new Message { Id = 3, Name = "first_password"},
+            new Message { Id = 4, Name = "login_error"},
+            new Message { Id = 5, Name = "login_error_title"}
         };
 
         private static List<MessageTranslation> defMessageTranslations = new List<MessageTranslation>()
@@ -135,7 +137,13 @@ namespace ANH_Bank
             new MessageTranslation { Language = "tr", Message = new Message{Id = 2, Name = "user_create_success_title"}, IsDefault = false, Translation = "BAŞARI!"},
 
             new MessageTranslation { Language = "en", Message = new Message{Id = 3, Name = "first_password"}, IsDefault = true, Translation = "Your password is: "},
-            new MessageTranslation { Language = "tr", Message = new Message{Id = 3, Name = "first_password"}, IsDefault = false, Translation = "Şifreniz: "}
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 3, Name = "first_password"}, IsDefault = false, Translation = "Şifreniz: "},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 4, Name = "login_error"}, IsDefault = true, Translation = "Invalid TCKN or password."},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 4, Name = "login_error"}, IsDefault = false, Translation = "Geçersiz TCKN veya şifre."},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 5, Name = "login_error_title"}, IsDefault = true, Translation = "Log In Error"},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 5, Name = "login_error_title"}, IsDefault = false, Translation = "Oturum Açma Hatası"}
         };
 
         #endregion

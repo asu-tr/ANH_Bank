@@ -117,187 +117,187 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;labelID.Name" xml:space="preserve">
-    <value>labelID</value>
-  </data>
-  <data name="&gt;&gt;labelID.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelForgotPwd.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>482, 453</value>
-  </data>
-  <data name="&gt;&gt;labelForgotPwd.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="labelID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;buttonSignIn.Name" xml:space="preserve">
-    <value>buttonSignIn</value>
-  </data>
-  <data name="buttonSignIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 293</value>
-  </data>
-  <data name="labelForgotPwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="&gt;&gt;labelPwd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelForgotPwd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxID.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelID.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="labelPwd.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="textBoxPwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 27</value>
-  </data>
-  <data name="&gt;&gt;textBoxPwd.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FormSignIn</value>
-  </data>
-  <data name="&gt;&gt;labelID.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelID.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 47</value>
-  </data>
-  <data name="&gt;&gt;textBoxPwd.Name" xml:space="preserve">
-    <value>textBoxPwd</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormSignIn</value>
-  </data>
-  <data name="textBoxPwd.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelForgotPwd.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;buttonSignIn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelPwd.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;labelID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelPwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 164</value>
-  </data>
-  <data name="textBoxID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 27</value>
-  </data>
-  <data name="textBoxPwd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <data name="labelID.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="textBoxPwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 200</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="textBoxID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <data name="&gt;&gt;textBoxID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxID.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelPwd.Name" xml:space="preserve">
-    <value>labelPwd</value>
-  </data>
-  <data name="labelForgotPwd.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonSignIn.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelForgotPwd.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxID.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxPwd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelPwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;labelForgotPwd.Name" xml:space="preserve">
-    <value>labelForgotPwd</value>
-  </data>
-  <data name="&gt;&gt;buttonSignIn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBoxID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 86</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelPwd.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;buttonSignIn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxID.Name" xml:space="preserve">
-    <value>textBoxID</value>
-  </data>
-  <data name="labelForgotPwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 401</value>
-  </data>
-  <data name="buttonSignIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 64</value>
-  </data>
-  <data name="&gt;&gt;labelPwd.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="labelID.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 16</value>
   </data>
-  <data name="&gt;&gt;textBoxPwd.Parent" xml:space="preserve">
+  <data name="labelID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelID.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;labelID.Name" xml:space="preserve">
+    <value>labelID</value>
+  </data>
+  <data name="&gt;&gt;labelID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelID.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelID.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelPwd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelPwd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelPwd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 164</value>
+  </data>
+  <data name="labelPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="labelPwd.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelPwd.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;labelPwd.Name" xml:space="preserve">
+    <value>labelPwd</value>
+  </data>
+  <data name="&gt;&gt;labelPwd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelPwd.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="labelPwd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;labelPwd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="textBoxID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 86</value>
+  </data>
+  <data name="textBoxID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 27</value>
+  </data>
+  <data name="textBoxID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxID.Name" xml:space="preserve">
+    <value>textBoxID</value>
+  </data>
+  <data name="&gt;&gt;textBoxID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxID.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxID.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxPwd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="textBoxPwd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 200</value>
+  </data>
+  <data name="textBoxPwd.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="textBoxPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 27</value>
+  </data>
+  <data name="textBoxPwd.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxPwd.Name" xml:space="preserve">
+    <value>textBoxPwd</value>
+  </data>
+  <data name="&gt;&gt;textBoxPwd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPwd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxPwd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelForgotPwd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelForgotPwd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 401</value>
+  </data>
+  <data name="labelForgotPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="labelForgotPwd.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelForgotPwd.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;labelForgotPwd.Name" xml:space="preserve">
+    <value>labelForgotPwd</value>
+  </data>
+  <data name="&gt;&gt;labelForgotPwd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelForgotPwd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelForgotPwd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonSignIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 293</value>
+  </data>
+  <data name="buttonSignIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 64</value>
+  </data>
+  <data name="buttonSignIn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="buttonSignIn.Text" xml:space="preserve">
     <value>button1</value>
   </data>
+  <data name="&gt;&gt;buttonSignIn.Name" xml:space="preserve">
+    <value>buttonSignIn</value>
+  </data>
+  <data name="&gt;&gt;buttonSignIn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSignIn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonSignIn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>482, 453</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormSignIn</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSignIn</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

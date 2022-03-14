@@ -142,6 +142,10 @@
   <data name="textBoxPwd.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 200</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBoxPwd.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
   <data name="labelForgotPwd.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 404</value>
   </data>

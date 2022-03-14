@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ANH_Bank.Models;
+using System;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -15,15 +17,40 @@ namespace ANH_Bank
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
-            int UserID = 0; // will be deleted
-            // sign in check and return id
+            Context ctx = new Context();
+            User user = ctx.Users.ToList().Where(u => u.TCKN == textBoxID.Text && Security.Decryption.Decrypt(u.Password, u.TCKN) == textBoxPwd.Text).FirstOrDefault();
 
-            OpenMainScreen(UserID);
+            if (user != null)
+            {
+                int UserID = user.Id;
+                OpenMainScreen(UserID);
+            }
+            else
+            {
+                string lang = Thread.CurrentThread.CurrentUICulture.Name;
+                MessageBox.Show(Helper.GetMessage("login_error", lang), Helper.GetMessage("login_error_title", lang), MessageBoxButtons.OK);
+            }
         }
 
         private void FormSignIn_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBoxID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBoxPwd.Focus();
+            }
+        }
+
+        private void textBoxPwd_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonSignIn.PerformClick();
+            }
         }
 
         #endregion
@@ -44,6 +71,5 @@ namespace ANH_Bank
         }
 
         #endregion
-
     }
 }

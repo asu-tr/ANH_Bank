@@ -63,11 +63,13 @@
             // 
             resources.ApplyResources(this.textBoxID, "textBoxID");
             this.textBoxID.Name = "textBoxID";
+            this.textBoxID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxID_KeyDown);
             // 
             // textBoxPwd
             // 
             resources.ApplyResources(this.textBoxPwd, "textBoxPwd");
             this.textBoxPwd.Name = "textBoxPwd";
+            this.textBoxPwd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxPwd_KeyDown);
             // 
             // labelForgotPwd
             // 
