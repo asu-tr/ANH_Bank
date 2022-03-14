@@ -202,7 +202,13 @@
     <Compile Include="ServiceCtrl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="ChildForms\FormChildAccounts.en.resx">
+      <DependentUpon>FormChildAccounts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildAccounts.resx">
+      <DependentUpon>FormChildAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildAccounts.tr.resx">
       <DependentUpon>FormChildAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildBills.resx">

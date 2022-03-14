@@ -38,6 +38,7 @@ namespace ANH_Bank.ChildForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChildAccounts));
             this.panelTotal = new System.Windows.Forms.Panel();
             this.labelTotalVal = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
@@ -46,41 +47,27 @@ namespace ANH_Bank.ChildForms
             // 
             // panelTotal
             // 
+            resources.ApplyResources(this.panelTotal, "panelTotal");
             this.panelTotal.Controls.Add(this.labelTotalVal);
             this.panelTotal.Controls.Add(this.labelTotal);
-            this.panelTotal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTotal.Location = new System.Drawing.Point(0, 0);
             this.panelTotal.Name = "panelTotal";
-            this.panelTotal.Size = new System.Drawing.Size(408, 75);
-            this.panelTotal.TabIndex = 0;
             // 
             // labelTotalVal
             // 
-            this.labelTotalVal.AutoSize = true;
-            this.labelTotalVal.Location = new System.Drawing.Point(250, 31);
+            resources.ApplyResources(this.labelTotalVal, "labelTotalVal");
             this.labelTotalVal.Name = "labelTotalVal";
-            this.labelTotalVal.Size = new System.Drawing.Size(88, 16);
-            this.labelTotalVal.TabIndex = 1;
-            this.labelTotalVal.Text = "labelTotalVal";
             // 
             // labelTotal
             // 
-            this.labelTotal.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelTotal.AutoSize = true;
-            this.labelTotal.Location = new System.Drawing.Point(13, 31);
+            resources.ApplyResources(this.labelTotal, "labelTotal");
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(68, 16);
-            this.labelTotal.TabIndex = 0;
-            this.labelTotal.Text = "labelTotal";
             // 
             // FormChildAccounts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 606);
             this.Controls.Add(this.panelTotal);
             this.Name = "FormChildAccounts";
-            this.Text = "FormChildAccounts";
             this.Load += new System.EventHandler(this.FormChildAccounts_Load);
             this.panelTotal.ResumeLayout(false);
             this.panelTotal.PerformLayout();
