@@ -129,7 +129,7 @@ namespace ANH_Bank
             new Message { Id = 5, Name = "login_error_title"},
             new Message { Id = 6, Name = "account"},
             new Message { Id = 7, Name = "new_balance"},
-            new Message { Id = 7, Name = "deposit_success_title"}
+            new Message { Id = 8, Name = "deposit_success_title"}
         };
 
         private static List<MessageTranslation> defMessageTranslations = new List<MessageTranslation>()
