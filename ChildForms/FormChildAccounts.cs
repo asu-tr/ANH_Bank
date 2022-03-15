@@ -54,7 +54,7 @@ namespace ANH_Bank.ChildForms
                 }
             }
 
-            labelTotalVal.Text = total.ToString();
+            labelTotalVal.Text = total.ToString() + " TRY";
 
             BringTotalToFront();
         }
