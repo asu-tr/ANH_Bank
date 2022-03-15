@@ -54,7 +54,7 @@ namespace ANH_Bank.ChildForms
                 }
             }
 
-            labelTotalVal.Text = total.ToString() + " TRY";
+            labelTotalVal.Text = "TRY " + total.ToString();
 
             BringTotalToFront();
         }
@@ -94,7 +94,7 @@ namespace ANH_Bank.ChildForms
 
             Label labelVal = new Label();
             labelVal.Name = "labelVal" + acc.Id.ToString();
-            labelVal.Text = acc.Currency.Name + acc.Balance.ToString();
+            labelVal.Text = acc.Currency.Name + " "+ acc.Balance.ToString();
             labelVal.Dock = DockStyle.Right;
             labelVal.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             labelVal.Font = ANHColorsFonts.Font_default;
