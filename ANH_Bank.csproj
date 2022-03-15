@@ -226,6 +226,9 @@
     <EmbeddedResource Include="ChildForms\FormChildDeposit.resx">
       <DependentUpon>FormChildDeposit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildDeposit.tr.resx">
+      <DependentUpon>FormChildDeposit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildMain.en.resx">
       <DependentUpon>FormChildMain.cs</DependentUpon>
     </EmbeddedResource>

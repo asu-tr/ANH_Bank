@@ -108,7 +108,7 @@ namespace ANH_Bank
 
         private void buttonDeposit_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormChildDeposit());
+            OpenChildForm(new FormChildDeposit(UserID));
             HideSubMenus();
         }
 
