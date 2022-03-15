@@ -53,8 +53,7 @@ namespace ANH_Bank
                 if (context.Accounts.ToList().Contains(a))
                 {
                     string lang = Thread.CurrentThread.CurrentUICulture.Name;
-                    //DialogResult dr = MessageBox.Show(Helper.GetMessage("user_create_success", lang) + Helper.GetMessage("first_password", lang), Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
-                    DialogResult dr = MessageBox.Show("Account created succesfully. " + "Your password is: " + pwd.ToString(), Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
+                    DialogResult dr = MessageBox.Show(Helper.GetMessage("user_create_success", lang) + Helper.GetMessage("first_password", lang) + pwd, Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
 
                     if (dr == DialogResult.OK)
                     {
@@ -64,7 +63,7 @@ namespace ANH_Bank
                     }
                 }
             }
-            
+
         }
 
         private void FormSignUp_FormClosed(object sender, FormClosedEventArgs e)
