@@ -127,7 +127,9 @@ namespace ANH_Bank
             new Message { Id = 3, Name = "first_password"},
             new Message { Id = 4, Name = "login_error"},
             new Message { Id = 5, Name = "login_error_title"},
-            new Message { Id = 6, Name = "account"}
+            new Message { Id = 6, Name = "account"},
+            new Message { Id = 7, Name = "new_balance"},
+            new Message { Id = 7, Name = "deposit_success_title"}
         };
 
         private static List<MessageTranslation> defMessageTranslations = new List<MessageTranslation>()
@@ -148,7 +150,13 @@ namespace ANH_Bank
             new MessageTranslation { Language = "tr", Message = new Message{Id = 5, Name = "login_error_title"}, IsDefault = false, Translation = "Oturum Açma Hatası"},
 
             new MessageTranslation { Language = "en", Message = new Message{Id = 6, Name = "account"}, IsDefault = true, Translation = "Account "},
-            new MessageTranslation { Language = "tr", Message = new Message{Id = 6, Name = "account"}, IsDefault = false, Translation = "Hesap "}
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 6, Name = "account"}, IsDefault = false, Translation = "Hesap "},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 7, Name = "new_balance"}, IsDefault = true, Translation = "Your new balance is: "},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 7, Name = "new_balance"}, IsDefault = false, Translation = "Yeni hesap bakiyeniz: "},
+
+            new MessageTranslation { Language = "en", Message = new Message{Id = 8, Name = "deposit_success_title"}, IsDefault = true, Translation = "Deposited Successfully!"},
+            new MessageTranslation { Language = "tr", Message = new Message{Id = 8, Name = "deposit_success_title"}, IsDefault = false, Translation = "Para Yatırma Başarılı!"}
         };
 
         #endregion
