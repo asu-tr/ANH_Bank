@@ -294,6 +294,7 @@ namespace ANH_Bank
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHome_FormClosed);
             this.panelSideMenu.ResumeLayout(false);
