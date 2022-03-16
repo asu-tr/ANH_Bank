@@ -117,73 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;flpLatest.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelWelcome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;labelWelcome.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelLatest.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;labelWelcome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelLatest.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;labelLatest.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flpAccounts.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="flpAccounts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 82</value>
-  </data>
-  <data name="flpLatest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 192</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FormChildMain</value>
-  </data>
-  <data name="&gt;&gt;labelLatest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelWelcome.Name" xml:space="preserve">
-    <value>labelWelcome</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormChildMain</value>
-  </data>
-  <data name="&gt;&gt;labelLatest.Name" xml:space="preserve">
-    <value>labelLatest</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelWelcome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 35</value>
   </data>
   <data name="labelWelcome.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 16</value>
   </data>
-  <data name="labelLatest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 318</value>
+  <data name="labelWelcome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+  <data name="labelWelcome.Text" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="&gt;&gt;flpLatest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;labelWelcome.Name" xml:space="preserve">
+    <value>labelWelcome</value>
+  </data>
+  <data name="&gt;&gt;labelWelcome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelWelcome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelWelcome.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="flpAccounts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="flpAccounts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 82</value>
   </data>
   <data name="flpAccounts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 174</value>
-  </data>
-  <data name="flpLatest.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>345, 113</value>
   </data>
   <data name="flpAccounts.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -191,53 +162,79 @@
   <data name="&gt;&gt;flpAccounts.Name" xml:space="preserve">
     <value>flpAccounts</value>
   </data>
-  <data name="labelWelcome.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelWelcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;flpAccounts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;flpAccounts.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="flpAccounts.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="&gt;&gt;flpAccounts.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;flpAccounts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="flpLatest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 296</value>
   </data>
-  <data name="labelLatest.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="flpLatest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 173</value>
   </data>
-  <data name="labelWelcome.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;labelLatest.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flpLatest.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>408, 606</value>
+  <data name="flpLatest.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;flpLatest.Name" xml:space="preserve">
     <value>flpLatest</value>
   </data>
-  <data name="labelWelcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 35</value>
+  <data name="&gt;&gt;flpLatest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="flpLatest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 367</value>
+  <data name="&gt;&gt;flpLatest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flpLatest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelLatest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLatest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 256</value>
   </data>
   <data name="labelLatest.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 16</value>
   </data>
+  <data name="labelLatest.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelLatest.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;labelLatest.Name" xml:space="preserve">
+    <value>labelLatest</value>
+  </data>
+  <data name="&gt;&gt;labelLatest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLatest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelLatest.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>tr</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>408, 506</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormChildMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormChildMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

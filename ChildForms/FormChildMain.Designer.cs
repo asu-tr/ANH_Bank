@@ -72,6 +72,7 @@
             this.Controls.Add(this.flpAccounts);
             this.Controls.Add(this.labelWelcome);
             this.Name = "FormChildMain";
+            this.Load += new System.EventHandler(this.FormChildMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

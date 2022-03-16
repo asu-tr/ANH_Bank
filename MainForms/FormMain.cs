@@ -21,7 +21,7 @@ namespace ANH_Bank
 
         private void buttonMain_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormChildMain());
+            OpenChildForm(new FormChildMain(UserID));
             HideSubMenus();
         }
 

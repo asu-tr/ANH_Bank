@@ -117,15 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="labelWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 16</value>
-  </data>
   <data name="labelWelcome.Text" xml:space="preserve">
     <value>Hoşgeldin</value>
-  </data>
-  <data name="labelLatest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 16</value>
   </data>
   <data name="labelLatest.Text" xml:space="preserve">
     <value>Son İşlemler</value>
