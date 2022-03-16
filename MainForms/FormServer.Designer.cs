@@ -70,6 +70,7 @@
             this.Controls.Add(this.buttonConnect);
             this.Controls.Add(this.comboBoxServerName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormServer";
             this.Load += new System.EventHandler(this.FormServer_Load);
             this.ResumeLayout(false);

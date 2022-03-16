@@ -202,6 +202,7 @@ namespace ANH_Bank
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.labelID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormSignUp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormSignUp_FormClosed);
             this.Load += new System.EventHandler(this.FormSignUp_Load);

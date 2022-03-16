@@ -158,6 +158,9 @@
   <data name="buttonConnect.Text" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="&gt;&gt;labelServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormServer</value>
   </data>
@@ -195,9 +198,6 @@
   <data name="&gt;&gt;buttonConnect.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="labelServer.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;buttonConnect.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -207,8 +207,8 @@
   <data name="comboBoxServerName.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
   </data>
-  <data name="&gt;&gt;labelServer.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="labelServer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

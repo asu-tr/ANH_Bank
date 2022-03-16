@@ -94,6 +94,7 @@
             this.Controls.Add(this.labelPwd);
             this.Controls.Add(this.labelID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormSignIn";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormSignIn_FormClosed);
             this.ResumeLayout(false);
