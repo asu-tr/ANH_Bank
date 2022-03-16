@@ -361,20 +361,16 @@ namespace ANH_Bank
             return acc;
         }
 
-        public static Account CreateAccount(User user, int currencyId, string accountName)
+        public static Account CreateAccount(User user, Models.Currency cur, string accountName)
         {
-            Context context = new Context();
-
             Account acc = new Account();
 
             acc.Name = accountName;
-            acc.Currency = context.Currencies.Where(c => c.Id == currencyId).First();
+            acc.Currency = cur;
             acc.Balance = 0;
             acc.Overdraft = 0;
             acc.InUse = true;
             acc.User = user;
-
-            context.Accounts.Add(acc);
 
             return (acc);
         }

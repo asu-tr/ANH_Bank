@@ -28,6 +28,9 @@ namespace ANH_Bank.ChildForms
 
             this.labelTotal.Font = ANHColorsFonts.Font_header3;
             this.labelTotalVal.Font = ANHColorsFonts.Font_header3;
+
+            this.buttonCreateAccount.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+            this.buttonCreateAccount.Font = ANHColorsFonts.Font_header3;
         }
 
         #region Windows Form Designer generated code
@@ -42,14 +45,18 @@ namespace ANH_Bank.ChildForms
             this.panelTotal = new System.Windows.Forms.Panel();
             this.labelTotalVal = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
+            this.panelButtons = new System.Windows.Forms.Panel();
+            this.buttonCreateAccount = new System.Windows.Forms.Button();
+            this.panelMiddle = new System.Windows.Forms.Panel();
             this.panelTotal.SuspendLayout();
+            this.panelButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTotal
             // 
-            resources.ApplyResources(this.panelTotal, "panelTotal");
             this.panelTotal.Controls.Add(this.labelTotalVal);
             this.panelTotal.Controls.Add(this.labelTotal);
+            resources.ApplyResources(this.panelTotal, "panelTotal");
             this.panelTotal.Name = "panelTotal";
             // 
             // labelTotalVal
@@ -62,15 +69,36 @@ namespace ANH_Bank.ChildForms
             resources.ApplyResources(this.labelTotal, "labelTotal");
             this.labelTotal.Name = "labelTotal";
             // 
+            // panelButtons
+            // 
+            this.panelButtons.Controls.Add(this.buttonCreateAccount);
+            resources.ApplyResources(this.panelButtons, "panelButtons");
+            this.panelButtons.Name = "panelButtons";
+            // 
+            // buttonCreateAccount
+            // 
+            resources.ApplyResources(this.buttonCreateAccount, "buttonCreateAccount");
+            this.buttonCreateAccount.Name = "buttonCreateAccount";
+            this.buttonCreateAccount.UseVisualStyleBackColor = true;
+            this.buttonCreateAccount.Click += new System.EventHandler(this.buttonCreateAccount_Click);
+            // 
+            // panelMiddle
+            // 
+            resources.ApplyResources(this.panelMiddle, "panelMiddle");
+            this.panelMiddle.Name = "panelMiddle";
+            // 
             // FormChildAccounts
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panelMiddle);
+            this.Controls.Add(this.panelButtons);
             this.Controls.Add(this.panelTotal);
             this.Name = "FormChildAccounts";
             this.Load += new System.EventHandler(this.FormChildAccounts_Load);
             this.panelTotal.ResumeLayout(false);
             this.panelTotal.PerformLayout();
+            this.panelButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -80,5 +108,8 @@ namespace ANH_Bank.ChildForms
         private System.Windows.Forms.Panel panelTotal;
         private System.Windows.Forms.Label labelTotalVal;
         private System.Windows.Forms.Label labelTotal;
+        private Panel panelButtons;
+        private Button buttonCreateAccount;
+        private Panel panelMiddle;
     }
 }
