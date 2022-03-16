@@ -52,7 +52,6 @@ namespace ANH_Bank.ChildForms
             MyInitializeComponent();
         }
 
-
         #endregion
 
         private void buttonDeposit_Click(object sender, System.EventArgs e)

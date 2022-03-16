@@ -23,6 +23,16 @@
         private void MyInitializeComponent()
         {
             this.BackColor = ANHColorsFonts.Color_MainBG;
+
+            this.buttonDeposit.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+            this.buttonDeposit.Font = ANHColorsFonts.Font_header3;
+
+            this.labelAcc.Font = ANHColorsFonts.Font_header2;
+            this.comboBoxAcc.Font = ANHColorsFonts.Font_default;
+            this.labelCurr.Font = ANHColorsFonts.Font_header2;
+            this.labelCurrVal.Font = ANHColorsFonts.Font_header2;
+            this.labelAmount.Font = ANHColorsFonts.Font_header2;
+            this.nudAmount.Font = ANHColorsFonts.Font_default;
         }
 
         #region Windows Form Designer generated code
