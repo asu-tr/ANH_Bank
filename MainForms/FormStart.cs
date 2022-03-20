@@ -18,6 +18,15 @@ namespace ANH_Bank
             RefreshForm();
         }
 
+        public FormStart(string lang)
+        {
+            Context context = new Context();
+            Helper.CreateDatabase(context);
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
+            RefreshForm();
+        }
+
 
         #region Events
 
