@@ -117,4 +117,214 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCurrVal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelCurrVal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelCurrVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 170</value>
+  </data>
+  <data name="labelCurrVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="labelCurrVal.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;labelCurrVal.Name" xml:space="preserve">
+    <value>labelCurrVal</value>
+  </data>
+  <data name="&gt;&gt;labelCurrVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCurrVal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCurrVal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelCurr.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCurr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCurr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 170</value>
+  </data>
+  <data name="labelCurr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 16</value>
+  </data>
+  <data name="labelCurr.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelCurr.Text" xml:space="preserve">
+    <value>Currency:</value>
+  </data>
+  <data name="&gt;&gt;labelCurr.Name" xml:space="preserve">
+    <value>labelCurr</value>
+  </data>
+  <data name="&gt;&gt;labelCurr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCurr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCurr.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="nudAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 289</value>
+  </data>
+  <data name="nudAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 22</value>
+  </data>
+  <data name="nudAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="nudAmount.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nudAmount.Name" xml:space="preserve">
+    <value>nudAmount</value>
+  </data>
+  <data name="&gt;&gt;nudAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudAmount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nudAmount.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonDeposit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonDeposit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 408</value>
+  </data>
+  <data name="buttonDeposit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 58</value>
+  </data>
+  <data name="buttonDeposit.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="buttonDeposit.Text" xml:space="preserve">
+    <value>DEPOSIT</value>
+  </data>
+  <data name="&gt;&gt;buttonDeposit.Name" xml:space="preserve">
+    <value>buttonDeposit</value>
+  </data>
+  <data name="&gt;&gt;buttonDeposit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDeposit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonDeposit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAmount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 232</value>
+  </data>
+  <data name="labelAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 16</value>
+  </data>
+  <data name="labelAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelAmount.Text" xml:space="preserve">
+    <value>Amount:</value>
+  </data>
+  <data name="&gt;&gt;labelAmount.Name" xml:space="preserve">
+    <value>labelAmount</value>
+  </data>
+  <data name="&gt;&gt;labelAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAmount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelAmount.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBoxAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 93</value>
+  </data>
+  <data name="comboBoxAcc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 24</value>
+  </data>
+  <data name="comboBoxAcc.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAcc.Name" xml:space="preserve">
+    <value>comboBoxAcc</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAcc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAcc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAcc.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelAcc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAcc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 48</value>
+  </data>
+  <data name="labelAcc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 16</value>
+  </data>
+  <data name="labelAcc.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelAcc.Text" xml:space="preserve">
+    <value>Account:</value>
+  </data>
+  <data name="&gt;&gt;labelAcc.Name" xml:space="preserve">
+    <value>labelAcc</value>
+  </data>
+  <data name="&gt;&gt;labelAcc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAcc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelAcc.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>408, 606</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormChildWithdraw</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormChildWithdraw</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

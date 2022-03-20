@@ -260,7 +260,13 @@
     <EmbeddedResource Include="ChildForms\FormChildTransfers.resx">
       <DependentUpon>FormChildTransfers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildWithdraw.en.resx">
+      <DependentUpon>FormChildWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildWithdraw.resx">
+      <DependentUpon>FormChildWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildWithdraw.tr.resx">
       <DependentUpon>FormChildWithdraw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForms\FormMain.en.resx">

@@ -114,7 +114,7 @@ namespace ANH_Bank
 
         private void buttonWithdraw_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormChildWithdraw());
+            OpenChildForm(new FormChildWithdraw(UserID));
             HideSubMenus();
         }
 
