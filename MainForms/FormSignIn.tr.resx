@@ -157,6 +157,9 @@
   <data name="buttonSignIn.Text" xml:space="preserve">
     <value>OTURUM AÇ</value>
   </data>
+  <data name="buttonBack.Text" xml:space="preserve">
+    <value>Geri</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Oturum Aç</value>
   </data>

@@ -9,12 +9,21 @@ namespace ANH_Bank
 {
     public partial class FormSignUp : Form
     {
+        string lang = Thread.CurrentThread.CurrentUICulture.Name;
+
         public FormSignUp()
         {
             RefreshForm();
         }
 
         #region Events
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormStart form = new FormStart(lang);
+            form.Show();
+            this.Hide();
+        }
 
         private void buttonSignUp_Click(object sender, System.EventArgs e)
         {
@@ -52,7 +61,6 @@ namespace ANH_Bank
 
                 if (context.Accounts.ToList().Contains(a))
                 {
-                    string lang = Thread.CurrentThread.CurrentUICulture.Name;
                     DialogResult dr = MessageBox.Show(Helper.GetMessage("user_create_success", lang) + Helper.GetMessage("first_password", lang) + pwd, Helper.GetMessage("user_create_success_title", lang), MessageBoxButtons.OK);
 
                     if (dr == DialogResult.OK)

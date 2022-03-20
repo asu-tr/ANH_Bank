@@ -45,6 +45,10 @@ namespace ANH_Bank
             this.buttonSignUp.Font = ANHColorsFonts.Font_header2;
             this.buttonSignUp.BackColor = ANHColorsFonts.Color_ButtonMainBack;
 
+
+            this.buttonBack.Font = ANHColorsFonts.Font_default;
+            this.buttonBack.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+
             System.DateTime today = System.DateTime.Now;
             System.DateTime max = new System.DateTime(today.Year - 18, today.Month, today.Day, today.Hour, today.Minute, today.Second);
             this.dtp.MaxDate = max;
@@ -78,6 +82,7 @@ namespace ANH_Bank
             this.textBoxSecA = new System.Windows.Forms.TextBox();
             this.buttonSignUp = new System.Windows.Forms.Button();
             this.labelSecA = new System.Windows.Forms.Label();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelID
@@ -178,10 +183,18 @@ namespace ANH_Bank
             resources.ApplyResources(this.labelSecA, "labelSecA");
             this.labelSecA.Name = "labelSecA";
             // 
+            // buttonBack
+            // 
+            resources.ApplyResources(this.buttonBack, "buttonBack");
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // FormSignUp
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonSignUp);
             this.Controls.Add(this.comboBoxSecQ);
             this.Controls.Add(this.dtp);
@@ -232,5 +245,6 @@ namespace ANH_Bank
         private System.Windows.Forms.TextBox textBoxSecA;
         private System.Windows.Forms.Button buttonSignUp;
         private Label labelSecA;
+        private Button buttonBack;
     }
 }

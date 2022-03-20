@@ -121,21 +121,11 @@
   <data name="labelID.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 16</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelID.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
   <data name="labelID.Text" xml:space="preserve">
     <value>T.C. Kimlik No:</value>
   </data>
-  <data name="textBoxID.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="labelFN.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 16</value>
-  </data>
-  <data name="labelFN.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
   </data>
   <data name="labelFN.Text" xml:space="preserve">
     <value>Adı:</value>
@@ -143,80 +133,38 @@
   <data name="labelBD.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 16</value>
   </data>
-  <data name="labelBD.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
   <data name="labelBD.Text" xml:space="preserve">
     <value>Doğum Tarihi:</value>
   </data>
   <data name="labelLN.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 16</value>
   </data>
-  <data name="labelLN.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="labelLN.Text" xml:space="preserve">
     <value>Soyadı:</value>
-  </data>
-  <data name="textBoxLN.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="labelAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 16</value>
   </data>
-  <data name="labelAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
   <data name="labelAddress.Text" xml:space="preserve">
     <value>Adres:</value>
-  </data>
-  <data name="textBoxAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="dtp.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="labelPhone.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 16</value>
   </data>
-  <data name="labelPhone.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
   <data name="labelPhone.Text" xml:space="preserve">
     <value>Telefon:</value>
-  </data>
-  <data name="textBoxPhone.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
   </data>
   <data name="labelEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 16</value>
   </data>
-  <data name="labelEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
   <data name="labelEmail.Text" xml:space="preserve">
     <value>E-posta Adresi:</value>
-  </data>
-  <data name="textBoxEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
   </data>
   <data name="labelSecQ.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 16</value>
   </data>
-  <data name="labelSecQ.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
   <data name="labelSecQ.Text" xml:space="preserve">
     <value>Güvenlik Sorusu:</value>
-  </data>
-  <data name="comboBoxSecQ.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="textBoxSecA.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="buttonSignUp.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
   </data>
   <data name="buttonSignUp.Text" xml:space="preserve">
     <value>KAYIT OL</value>
@@ -224,11 +172,11 @@
   <data name="labelSecA.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 16</value>
   </data>
-  <data name="labelSecA.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <data name="labelSecA.Text" xml:space="preserve">
     <value>Cevap:</value>
+  </data>
+  <data name="buttonBack.Text" xml:space="preserve">
+    <value>Geri</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Kayıt</value>

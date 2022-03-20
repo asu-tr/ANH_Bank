@@ -8,12 +8,21 @@ namespace ANH_Bank
 {
     public partial class FormSignIn : Form
     {
+        string lang = Thread.CurrentThread.CurrentUICulture.Name;
+
         public FormSignIn()
         {
             RefreshForm();
         }
 
         #region Events
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            FormStart form = new FormStart(lang);
+            form.Show();
+            this.Hide();
+        }
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
@@ -27,7 +36,6 @@ namespace ANH_Bank
             }
             else
             {
-                string lang = Thread.CurrentThread.CurrentUICulture.Name;
                 MessageBox.Show(Helper.GetMessage("login_error", lang), Helper.GetMessage("login_error_title", lang), MessageBoxButtons.OK);
             }
         }

@@ -27,9 +27,11 @@
             this.textBoxPwd.Font = ANHColorsFonts.Font_default;
             this.buttonSignIn.Font = ANHColorsFonts.Font_header1;
             this.labelForgotPwd.Font = ANHColorsFonts.Font_default;
+            this.buttonBack.Font = ANHColorsFonts.Font_default;
 
             this.BackColor = ANHColorsFonts.Color_MainBG;
             this.buttonSignIn.BackColor = ANHColorsFonts.Color_ButtonMainBack;
+            this.buttonBack.BackColor = ANHColorsFonts.Color_ButtonMainBack;
         }
 
         #region Windows Form Designer generated code
@@ -47,6 +49,7 @@
             this.textBoxPwd = new System.Windows.Forms.TextBox();
             this.labelForgotPwd = new System.Windows.Forms.Label();
             this.buttonSignIn = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelID
@@ -83,10 +86,18 @@
             this.buttonSignIn.UseVisualStyleBackColor = true;
             this.buttonSignIn.Click += new System.EventHandler(this.buttonSignIn_Click);
             // 
+            // buttonBack
+            // 
+            resources.ApplyResources(this.buttonBack, "buttonBack");
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // FormSignIn
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonSignIn);
             this.Controls.Add(this.labelForgotPwd);
             this.Controls.Add(this.textBoxPwd);
@@ -110,5 +121,6 @@
         private System.Windows.Forms.TextBox textBoxPwd;
         private System.Windows.Forms.Label labelForgotPwd;
         private System.Windows.Forms.Button buttonSignIn;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
