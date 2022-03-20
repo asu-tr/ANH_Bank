@@ -117,11 +117,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;labelTotalVal.Name" xml:space="preserve">
+    <value>labelTotalVal</value>
+  </data>
+  <data name="&gt;&gt;labelTotalVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotalVal.Parent" xml:space="preserve">
+    <value>panelTotal</value>
+  </data>
+  <data name="&gt;&gt;labelTotalVal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.Name" xml:space="preserve">
+    <value>labelTotal</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.Parent" xml:space="preserve">
+    <value>panelTotal</value>
+  </data>
+  <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelTotal.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panelTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 75</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelTotal.Name" xml:space="preserve">
+    <value>panelTotal</value>
+  </data>
+  <data name="&gt;&gt;panelTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTotal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTotal.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="labelTotalVal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelTotalVal.Location" type="System.Drawing.Point, System.Drawing">
     <value>250, 31</value>
   </data>
@@ -146,7 +195,6 @@
   <data name="&gt;&gt;labelTotalVal.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelTotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -177,29 +225,41 @@
   <data name="&gt;&gt;labelTotal.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panelTotal.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;buttonCreateAccount.Name" xml:space="preserve">
+    <value>buttonCreateAccount</value>
   </data>
-  <data name="panelTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;buttonCreateAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 75</value>
+  <data name="&gt;&gt;buttonCreateAccount.Parent" xml:space="preserve">
+    <value>panelButtons</value>
   </data>
-  <data name="panelTotal.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;buttonCreateAccount.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;panelTotal.Name" xml:space="preserve">
-    <value>panelTotal</value>
+  <data name="panelButtons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="&gt;&gt;panelTotal.Type" xml:space="preserve">
+  <data name="panelButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 435</value>
+  </data>
+  <data name="panelButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 71</value>
+  </data>
+  <data name="panelButtons.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelButtons.Name" xml:space="preserve">
+    <value>panelButtons</value>
+  </data>
+  <data name="&gt;&gt;panelButtons.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelTotal.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelButtons.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panelTotal.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panelButtons.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="buttonCreateAccount.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 5</value>
@@ -225,30 +285,6 @@
   <data name="&gt;&gt;buttonCreateAccount.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panelButtons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelButtons.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 535</value>
-  </data>
-  <data name="panelButtons.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 71</value>
-  </data>
-  <data name="panelButtons.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelButtons.Name" xml:space="preserve">
-    <value>panelButtons</value>
-  </data>
-  <data name="&gt;&gt;panelButtons.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelButtons.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelButtons.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="panelMiddle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -258,8 +294,14 @@
   <data name="panelMiddle.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 75</value>
   </data>
+  <data name="panelMiddle.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>408, 351</value>
+  </data>
+  <data name="panelMiddle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>408, 351</value>
+  </data>
   <data name="panelMiddle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 460</value>
+    <value>408, 351</value>
   </data>
   <data name="panelMiddle.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -283,7 +325,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>408, 606</value>
+    <value>408, 506</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormChildAccounts</value>
