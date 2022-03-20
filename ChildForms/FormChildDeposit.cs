@@ -21,39 +21,6 @@ namespace ANH_Bank.ChildForms
 
         #region Events
 
-        private void comboBoxAcc_SelectedIndexChanged(object sender, System.EventArgs e)
-        {
-            ComboBox comboBox = (ComboBox)sender;
-            Account acc = (Account)comboBox.SelectedItem;
-            labelCurrVal.Text = acc.Currency.Name;
-        }
-
-        private void FormChildDeposit_Load(object sender, System.EventArgs e)
-        {
-            List<Account> accounts = user.Accounts.ToList();
-            foreach (Account account in accounts)
-            {
-                if (account.Name == null)
-                    account.Name = "Account " + account.Id.ToString();
-                //account.Name = GetMessage("account", lang) + acc.Id.ToString(); // undo when db created again
-            }
-            comboBoxAcc.DisplayMember = "Name";
-            comboBoxAcc.ValueMember = "Id";
-            comboBoxAcc.DataSource = accounts;
-        }
-
-        #endregion
-
-        #region Methods
-
-        private void RefreshForm()
-        {
-            InitializeComponent();
-            MyInitializeComponent();
-        }
-
-        #endregion
-
         private void buttonDeposit_Click(object sender, System.EventArgs e)
         {
             decimal amount = nudAmount.Value;
@@ -76,5 +43,37 @@ namespace ANH_Bank.ChildForms
                 nudAmount.Value = 0;
             }
         }
+
+        private void comboBoxAcc_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            ComboBox comboBox = (ComboBox)sender;
+            Account acc = (Account)comboBox.SelectedItem;
+            labelCurrVal.Text = acc.Currency.Name;
+        }
+
+        private void FormChildDeposit_Load(object sender, System.EventArgs e)
+        {
+            List<Account> accounts = user.Accounts.ToList();
+            foreach (Account account in accounts)
+            {
+                if (account.Name == null)
+                account.Name = Helper.GetMessage("account", lang) + account.Id.ToString();
+            }
+            comboBoxAcc.DisplayMember = "Name";
+            comboBoxAcc.ValueMember = "Id";
+            comboBoxAcc.DataSource = accounts;
+        }
+
+        #endregion
+
+        #region Methods
+
+        private void RefreshForm()
+        {
+            InitializeComponent();
+            MyInitializeComponent();
+        }
+
+        #endregion
     }
 }
