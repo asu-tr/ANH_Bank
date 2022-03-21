@@ -24,23 +24,26 @@ namespace ANH_Bank.ChildForms
         {
             Account acc = (Account)comboBoxAcc.SelectedItem;
 
-            acc.Balance -= nudAmount.Value;
-            DW dw = new DW();
-            dw.DWTime = System.DateTime.Now;
-            dw.MoneyIn = false;
-            dw.Amount = nudAmount.Value;
-            dw.Account = acc;
-            ctx.DWs.Add(dw);
-
-            ctx.SaveChanges();
-
-            DialogResult dr = MessageBox.Show("Your new balance is: " + acc.Balance.ToString(), "Success", MessageBoxButtons.OK);
-            //DialogResult dr = MessageBox.Show(Helper.GetMessage("new_withdraw_balance", lang) + acc.Balance.ToString(), Helper.GetMessage("withdraw_success_title", lang), MessageBoxButtons.OK); // add this to messages list
-
-            if (dr == DialogResult.OK)
+            if (acc != null)
             {
-                nudAmount.Value = 1;
-                labelBalanceVal.Text = acc.Balance.ToString();
+                acc.Balance -= nudAmount.Value;
+                DW dw = new DW();
+                dw.DWTime = System.DateTime.Now;
+                dw.MoneyIn = false;
+                dw.Amount = nudAmount.Value;
+                dw.Account = acc;
+                ctx.DWs.Add(dw);
+
+                ctx.SaveChanges();
+
+                DialogResult dr = MessageBox.Show("Your new balance is: " + acc.Balance.ToString(), "Success", MessageBoxButtons.OK);
+                //DialogResult dr = MessageBox.Show(Helper.GetMessage("new_withdraw_balance", lang) + acc.Balance.ToString(), Helper.GetMessage("withdraw_success_title", lang), MessageBoxButtons.OK); // add this to messages list
+
+                if (dr == DialogResult.OK)
+                {
+                    nudAmount.Value = 1;
+                    labelBalanceVal.Text = acc.Balance.ToString();
+                }
             }
         }
 
