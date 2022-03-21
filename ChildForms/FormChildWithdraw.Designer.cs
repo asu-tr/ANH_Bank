@@ -31,6 +31,8 @@
             this.comboBoxAcc.Font = ANHColorsFonts.Font_default;
             this.labelCurr.Font = ANHColorsFonts.Font_header2;
             this.labelCurrVal.Font = ANHColorsFonts.Font_header2;
+            this.labelBalance.Font = ANHColorsFonts.Font_header2;
+            this.labelBalanceVal.Font = ANHColorsFonts.Font_header2;
             this.labelAmount.Font = ANHColorsFonts.Font_header2;
             this.nudAmount.Font = ANHColorsFonts.Font_default;
         }
@@ -51,6 +53,8 @@
             this.labelAmount = new System.Windows.Forms.Label();
             this.comboBoxAcc = new System.Windows.Forms.ComboBox();
             this.labelAcc = new System.Windows.Forms.Label();
+            this.labelBalance = new System.Windows.Forms.Label();
+            this.labelBalanceVal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,11 +102,23 @@
             resources.ApplyResources(this.labelAcc, "labelAcc");
             this.labelAcc.Name = "labelAcc";
             // 
+            // labelBalance
+            // 
+            resources.ApplyResources(this.labelBalance, "labelBalance");
+            this.labelBalance.Name = "labelBalance";
+            // 
+            // labelBalanceVal
+            // 
+            resources.ApplyResources(this.labelBalanceVal, "labelBalanceVal");
+            this.labelBalanceVal.Name = "labelBalanceVal";
+            // 
             // FormChildWithdraw
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labelBalanceVal);
             this.Controls.Add(this.labelCurrVal);
+            this.Controls.Add(this.labelBalance);
             this.Controls.Add(this.labelCurr);
             this.Controls.Add(this.nudAmount);
             this.Controls.Add(this.buttonDeposit);
@@ -126,5 +142,7 @@
         private System.Windows.Forms.Label labelAmount;
         private System.Windows.Forms.ComboBox comboBoxAcc;
         private System.Windows.Forms.Label labelAcc;
+        private System.Windows.Forms.Label labelBalance;
+        private System.Windows.Forms.Label labelBalanceVal;
     }
 }

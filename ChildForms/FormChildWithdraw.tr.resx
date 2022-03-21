@@ -139,6 +139,12 @@
   <data name="labelAcc.Text" xml:space="preserve">
     <value>Hesap:</value>
   </data>
+  <data name="labelBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 16</value>
+  </data>
+  <data name="labelBalance.Text" xml:space="preserve">
+    <value>Bakiye:</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>PARA ÇEKME</value>
   </data>

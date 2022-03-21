@@ -127,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="labelCurrVal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 170</value>
+    <value>264, 208</value>
   </data>
   <data name="labelCurrVal.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 16</value>
@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCurrVal.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="labelCurr.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -154,7 +154,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCurr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 170</value>
+    <value>60, 208</value>
   </data>
   <data name="labelCurr.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 16</value>
@@ -175,10 +175,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelCurr.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="nudAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 289</value>
+    <value>60, 318</value>
   </data>
   <data name="nudAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 22</value>
@@ -199,7 +199,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;nudAmount.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="buttonDeposit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -226,7 +226,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonDeposit.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="labelAmount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -235,7 +235,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 232</value>
+    <value>60, 268</value>
   </data>
   <data name="labelAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 16</value>
@@ -256,10 +256,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAmount.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="comboBoxAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 93</value>
+    <value>60, 89</value>
   </data>
   <data name="comboBoxAcc.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 24</value>
@@ -277,7 +277,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBoxAcc.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="labelAcc.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -286,7 +286,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 48</value>
+    <value>57, 44</value>
   </data>
   <data name="labelAcc.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 16</value>
@@ -307,7 +307,64 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labelAcc.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
+  </data>
+  <data name="labelBalance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelBalance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 154</value>
+  </data>
+  <data name="labelBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="labelBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelBalance.Text" xml:space="preserve">
+    <value>Balance:</value>
+  </data>
+  <data name="&gt;&gt;labelBalance.Name" xml:space="preserve">
+    <value>labelBalance</value>
+  </data>
+  <data name="&gt;&gt;labelBalance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelBalance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelBalance.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelBalanceVal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelBalanceVal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelBalanceVal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 154</value>
+  </data>
+  <data name="labelBalanceVal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="labelBalanceVal.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;labelBalanceVal.Name" xml:space="preserve">
+    <value>labelBalanceVal</value>
+  </data>
+  <data name="&gt;&gt;labelBalanceVal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelBalanceVal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelBalanceVal.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -316,7 +373,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>408, 606</value>
+    <value>408, 506</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormChildWithdraw</value>
