@@ -72,6 +72,12 @@
     <Compile Include="ChildForms\FormChildAccounts.Designer.cs">
       <DependentUpon>FormChildAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\FormChildAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChildAPI.Designer.cs">
+      <DependentUpon>FormChildAPI.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\FormChildBills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +223,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildAccounts.tr.resx">
       <DependentUpon>FormChildAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildAPI.resx">
+      <DependentUpon>FormChildAPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChildAPI.tr.resx">
+      <DependentUpon>FormChildAPI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\FormChildBills.resx">
       <DependentUpon>FormChildBills.cs</DependentUpon>

@@ -1,6 +1,9 @@
-﻿using ANH_Bank.Models;
+﻿using ANH_Bank.ChildForms;
+using ANH_Bank.Models;
 using System;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -32,6 +35,17 @@ namespace ANH_Bank
             if (user != null)
             {
                 int UserID = user.Id;
+
+                string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                path = Path.Combine(path, "config.json");
+                bool fileExist = File.Exists(path);
+
+                if (!fileExist)
+                {
+                    FormChildAPI formChildAPI = new FormChildAPI();
+                    formChildAPI.ShowDialog();
+                }
+
                 OpenMainScreen(UserID);
             }
             else

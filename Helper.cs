@@ -380,10 +380,8 @@ namespace ANH_Bank
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string js = File.ReadAllText(path + "\\config.json");
 
-            List<Key> keys = JsonConvert.DeserializeObject<List<Key>>(js);
-            string key = keys[0].KeyValue;
-
-            return key;
+            Key key = JsonConvert.DeserializeObject<Key>(js);
+            return key.KeyValue;
         }
 
         #endregion
