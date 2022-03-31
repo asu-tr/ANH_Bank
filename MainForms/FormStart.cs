@@ -1,6 +1,5 @@
 ﻿using ANH_Bank.Models;
 using System;
-using System.Configuration;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
@@ -14,7 +13,7 @@ namespace ANH_Bank
             Context context = new Context();
             Helper.CreateDatabase(context);
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             RefreshForm();
         }
 
@@ -23,7 +22,7 @@ namespace ANH_Bank
             Context context = new Context();
             Helper.CreateDatabase(context);
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
             RefreshForm();
         }
 
@@ -35,15 +34,15 @@ namespace ANH_Bank
             switch (GetCurrentLanguage())
             {
                 case "tr":
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
                     break;
 
                 case "en":
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("tr");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr");
                     break;
 
                 default:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
                     break;
             }
 
